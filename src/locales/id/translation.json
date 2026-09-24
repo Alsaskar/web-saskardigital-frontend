@@ -1,0 +1,783 @@
+{
+    "navbar": {
+        "about": "TENTANG",
+        "services": "LAYANAN",
+        "submenu-services": {
+            "menu-1": "Web Company Profile",
+            "menu-2": "Software Custom"
+        },
+        "portfolio": "PORTOFOLIO",
+        "contact": "KONTAK"
+    },
+    "navbar-public": {
+        "home": "BERANDA",
+        "services": "LAYANAN",
+        "submenu-services": {
+            "menu-1": "Web Company Profile",
+            "menu-2": "Custom Software"
+        },
+        "portfolio": "PORTOFOLIO"
+    },
+    "hero": {
+        "title": "Solusi Digital untuk Bisnis yang Ingin Bertumbuh",
+        "description": "Ubah proses bisnis yang rumit menjadi lebih sederhana, terukur, dan terkontrol melalui solusi digital yang dirancang khusus untuk kebutuhan bisnis Anda.",
+        "txt-button-1": "Konsultasikan Bisnis Anda",
+        "txt-button-2": "Lihat Portofolio"
+    },
+    "about": {
+        "eyebrow": "TENTANG SASKARDIGITAL",
+        "title": "Partner Digital untuk Membangun Bisnis yang Lebih Baik",
+        "brand": "PT Saskardigital Solusi Indonesia",
+        "description-1": "adalah perusahaan solusi digital yang membantu bisnis bertransformasi melalui teknologi — mulai dari software custom, aplikasi, hingga website yang dirancang sesuai kebutuhan spesifik setiap klien.",
+        "description-2": "WDengan tim profesional yang sudah berpengalaman selama 10+ tahun di industri teknologi, kami memahami bahwa setiap bisnis memiliki tantangan dan proses kerja yang berbeda. Karena itu, sebelum membangun solusi, kami selalu memulai dengan memahami alur bisnis, kebutuhan operasional, dan tujuan jangka panjang klien — agar sistem yang dibangun bukan sekadar 'jadi', tapi benar-benar relevan dan bisa digunakan secara maksimal.",
+        "principles": {
+            "eyebrow": "PRINSIP KERJA KAMI",
+            "title": "Bagaimana Kami Bekerja",
+            "relevant-solutions": {
+                "title": "Solusi yang Relevan",
+                "description": "Setiap sistem dibangun berdasarkan kebutuhan nyata bisnis, bukan template generik."
+            },
+            "collaboration": {
+                "title": "Kolaborasi, Bukan Sekadar Pengerjaan",
+                "description": "Kami melibatkan klien di setiap tahap, dari perencanaan hingga eksekusi."
+            },
+            "quality": {
+                "title": "Kualitas & Kestabilan Sistem",
+                "description": "Fokus pada software yang tidak hanya berfungsi, tetapi juga andal dan mudah dikembangkan ke depannya."
+            },
+            "transparency": {
+                "title": "Transparansi Proses",
+                "description": "Progress pengerjaan dan komunikasi yang jelas di setiap tahap proyek."
+            },
+            "support": {
+                "title": "Dukungan Jangka Panjang",
+                "description": "Hubungan tidak berhenti di serah terima. Kami mendampingi klien melalui layanan maintenance dan support."
+            }
+        },
+        "txt-button": "Kenali Layanan Kami"
+    },
+    "services": {
+        "eyebrow": "LAYANAN KAMI",
+        "title": "Teknologi yang Dirancang untuk Kebutuhan Bisnis Anda",
+        "company-profile": {
+            "title": "Website Company Profile",
+            "description": "Bangun kehadiran digital yang profesional untuk meningkatkan kredibilitas dan kepercayaan terhadap bisnis Anda.",
+            "txt-button": "Learn More"
+        },
+        "web-application": {
+            "title": "Web Application",
+            "description": "Aplikasi berbasis web yang dirancang sesuai kebutuhan, alur kerja, dan proses bisnis Anda.",
+            "txt-button": "Learn More"
+        },
+        "mobile-application": {
+            "title": "Mobile Application",
+            "description": "Hadirkan layanan bisnis yang lebih mudah diakses melalui aplikasi mobile yang cepat dan modern.",
+            "txt-button": "Learn More"
+        },
+        "business-system": {
+            "title": "Business Systems / CRM / HRIS",
+            "description": "Sistem terintegrasi untuk membantu bisnis mengelola operasional, pelanggan, dan sumber daya manusia.",
+            "txt-button": "Learn More"
+        }
+    },
+    "how-we-work": {
+        "eyebrow": "CARA KAMI BEKERJA",
+        "title": "Dari Ide Menjadi Solusi Digital",
+        "description": "Setiap project kami kerjakan melalui proses yang terstruktur, mulai dari memahami kebutuhan hingga memberikan dukungan setelah solusi digunakan.",
+        "steps": {
+            "understand": {
+                "number": "01",
+                "title": "Understand",
+                "description": "Memahami kebutuhan dan proses bisnis klien."
+            },
+            "plan": {
+                "number": "02",
+                "title": "Plan",
+                "description": "Menyusun solusi, fitur, dan alur sistem."
+            },
+            "build": {
+                "number": "03",
+                "title": "Build",
+                "description": "Mengembangkan aplikasi dengan pendekatan yang terstruktur."
+            },
+            "deliver": {
+                "number": "04",
+                "title": "Deliver",
+                "description": "Menyelesaikan project dan memastikan solusi dapat digunakan."
+            },
+            "support": {
+                "number": "05",
+                "title": "Support",
+                "description": "Memberikan dukungan setelah project selesai."
+            }
+        }
+    },
+    "why-choose-us": {
+        "eyebrow": "WHY CHOOSE US",
+        "title": "Kenapa Bisnis Memilih Saskardigital?",
+        "description": "Kami tidak hanya membangun software. Kami memahami bisnis di balik software tersebut untuk menghasilkan solusi yang relevan, terukur, dan dapat berkembang bersama bisnis Anda.",
+        "caption": "OUR APPROACH",
+        "items": {
+            "tailored": {
+                "number": "01",
+                "title": "Custom Sesuai Kebutuhan Bisnis",
+                "description": "Setiap solusi dirancang berdasarkan kebutuhan, proses, dan karakter bisnis Anda."
+            },
+            "communication": {
+                "number": "02",
+                "title": "Komunikasi yang Jelas",
+                "description": "Kami menjaga komunikasi tetap terbuka agar setiap proses, progress, dan kebutuhan dapat dipahami dengan baik."
+            },
+            "scalable": {
+                "number": "03",
+                "title": "Solusi yang Dapat Dikembangkan",
+                "description": "Sistem dibangun dengan mempertimbangkan kebutuhan bisnis hari ini dan perkembangan bisnis di masa depan."
+            },
+            "business-focused": {
+                "number": "04",
+                "title": "Fokus pada Kebutuhan Bisnis",
+                "description": "Kami tidak sekadar menambahkan fitur, tetapi memastikan setiap bagian sistem memiliki tujuan yang jelas bagi bisnis."
+            },
+            "structured": {
+                "number": "05",
+                "title": "Pendekatan yang Terstruktur",
+                "description": "Mulai dari analisis hingga implementasi, setiap project dikerjakan melalui proses yang terarah dan terukur."
+            }
+        }
+    },
+    "request-project": {
+        "label": "REQUEST PROJECT",
+        "title": "Punya Ide atau Masalah yang Ingin Diselesaikan?",
+        "description": "Ceritakan kebutuhan bisnis Anda kepada kami. Tim Saskardigital akan mempelajari kebutuhan tersebut dan membantu menemukan solusi digital yang tepat.",
+        "note-title": "Mulai dari konsultasi",
+        "note-description": "Tidak perlu langsung menentukan spesifikasi. Mari diskusikan kebutuhan Anda terlebih dahulu.",
+        "contact-label": "ATAU HUBUNGI KAMI"
+    },
+    "portfolio": {
+        "eyebrow": "PORTOFOLIO",
+        "title": "Solusi Digital yang Telah Kami Bangun",
+        "description": "Dari website hingga sistem bisnis, kami membangun berbagai solusi digital yang dirancang untuk menjawab kebutuhan nyata setiap klien.",
+        "footer-label": "SELECTED PROJECTS",
+        "view-all": "Lihat Semua Project"
+    },
+    "our-clients": {
+        "eyebrow": "CLIENT KAMI",
+        "title": "Dipercaya oleh Berbagai Bisnis",
+        "description": "Kami membantu berbagai bisnis membangun solusi digital yang sesuai dengan kebutuhan dan proses kerja mereka.",
+        "trusted-partners": "TRUSTED PARTNERS"
+    },
+    "location": {
+        "eyebrow": "VISIT OUR OFFICE",
+        "title": "Kunjungi Kami",
+        "description": "Ingin berdiskusi langsung mengenai kebutuhan digital bisnis Anda? Kami terbuka untuk bertemu dan membahasnya bersama.",
+        "office": "OFFICE",
+        "contact": "KONTAK",
+        "office-hours": "JAM KANTOR",
+        "days": "Senin – Jumat",
+        "hours": "08:00 – 17:00 WITA",
+        "get-directions": "Get Directions",
+        "office-label": "Saskardigital Office"
+    },
+    "footer": {
+        "description": "Solusi digital yang dirancang untuk membantu bisnis bekerja lebih baik, lebih terukur, dan siap berkembang.",
+        "navigation": "NAVIGATION",
+        "about": "Tentang",
+        "portfolio": "Portofolio",
+        "contact": "Kontak",
+        "services": "SERVICES",
+        "custom-software": "Custom Software",
+        "company-profile": "Web Company Profile",
+        "contact-title": "CONTACT",
+        "office-hours": "Monday – Friday, 08:00 – 17:00 WITA",
+        "follow-us": "FOLLOW US",
+        "back-to-top": "Back to top"
+    },
+    "faq": {
+        "label": "FAQ",
+        "title": "Pertanyaan yang Sering Ditanyakan",
+        "description": "Beberapa hal yang mungkin ingin Anda ketahui sebelum memulai project bersama Saskardigital.",
+        "questions": [
+            {
+                "question": "Apakah Saskardigital menerima project custom?",
+                "answer": "Ya, kami mengembangkan solusi sesuai kebutuhan dan proses bisnis klien."
+            },
+            {
+                "question": "Apakah bisa membuat website company profile?",
+                "answer": "Ya, kami menyediakan layanan pembuatan website company profile profesional yang disesuaikan dengan identitas dan kebutuhan bisnis Anda."
+            },
+            {
+                "question": "Apakah bisa mengembangkan aplikasi dari nol?",
+                "answer": "Ya, mulai dari analisis kebutuhan, perencanaan, desain sistem, hingga pengembangan aplikasi."
+            },
+            {
+                "question": "Apakah bisa melanjutkan atau mengembangkan sistem yang sudah ada?",
+                "answer": "Bisa, setelah dilakukan evaluasi terhadap sistem, teknologi, dan kondisi aplikasi yang tersedia."
+            },
+            {
+                "question": "Bagaimana proses memulai project?",
+                "answer": "Project dimulai melalui konsultasi kebutuhan, pembahasan solusi, dan penyusunan penawaran yang disesuaikan dengan kebutuhan project."
+            },
+            {
+                "question": "Berapa lama pengerjaan project?",
+                "answer": "Waktu pengerjaan bergantung pada kompleksitas, jumlah fitur, dan kebutuhan project. Estimasi timeline akan dibahas setelah kebutuhan project dipahami."
+            },
+            {
+                "question": "Apakah Saskardigital melayani maintenance dan support setelah project selesai?",
+                "answer": "Ya, kami dapat memberikan layanan maintenance dan support setelah project selesai untuk membantu menjaga sistem tetap berjalan dan dapat dikembangkan."
+            },
+            {
+                "question": "Apakah saya bisa berkonsultasi terlebih dahulu sebelum menentukan project?",
+                "answer": "Tentu. Kami menyarankan konsultasi terlebih dahulu agar kebutuhan, masalah bisnis, dan solusi yang tepat dapat dipahami sebelum project dimulai."
+            },
+            {
+                "question": "Apakah project bisa dikembangkan secara bertahap sesuai budget?",
+                "answer": "Bisa. Project dapat direncanakan secara bertahap dengan menentukan fitur dan prioritas utama terlebih dahulu, kemudian dikembangkan sesuai kebutuhan berikutnya."
+            },
+            {
+                "question": "Apakah Saskardigital melayani bisnis dari luar kota?",
+                "answer": "Ya. Konsultasi, komunikasi, dan proses project dapat dilakukan secara online sehingga kami dapat bekerja sama dengan bisnis dari berbagai daerah."
+            }
+        ]
+    },
+    "client-feedback": {
+        "eyebrow": "TESTIMONI KLIEN",
+        "title": "Apa Kata Mereka Tentang Saskardigital?",
+        "description": "Bukan hanya tentang software yang selesai, tetapi tentang bagaimana solusi tersebut memberikan dampak nyata bagi bisnis.",
+        "bottom-label": "WHAT OUR CLIENTS SAY",
+        "bottom-caption": "CLIENT EXPERIENCE"
+    },
+    "request-project-form": {
+        "step": "01 / PROJECT DETAILS",
+        "title": "Ceritakan project Anda",
+        "fields": {
+            "name": {
+                "label": "Nama",
+                "placeholder": "Nama Lengkap"
+            },
+            "company": {
+                "label": "Perusahaan",
+                "placeholder": "Nama Perusahaan"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "email@company.com"
+            },
+            "phone": {
+                "label": "WhatsApp",
+                "placeholder": "+62 xxx xxxx xxxx"
+            },
+            "project-type": {
+                "label": "Jenis Project",
+                "placeholder": "Select project type",
+                "options": {
+                    "company-profile": "Company Profile Website",
+                    "web-application": "Web Application",
+                    "mobile-application": "Mobile Application",
+                    "business-system": "Business System / CRM / HRIS",
+                    "custom": "Custom Project",
+                    "maintenance": "Maintenance / Existing System Development"
+                }
+            },
+            "budget": {
+                "label": "Estimasi Budget",
+                "placeholder": "Pilih Budget",
+                "options": {
+                    "under-5": "Dibawah Rp 5 juta",
+                    "5-10": "Rp 5 - Rp 10 juta",
+                    "10-25": "Rp 10 - Rp 25 juta",
+                    "25-50": "Rp 25 - Rp 50 juta",
+                    "50-plus": "Di atas Rp 50 juta",
+                    "discuss": "Ingin dikonsultasikan"
+                }
+            },
+            "timeline": {
+                "label": "Target Project",
+                "placeholder": "Pilih target",
+                "options": {
+                    "asap": "Secepatnya",
+                    "1-month": "Dalam 1 bulan",
+                    "1-3-months": "1 – 3 bulan",
+                    "3-plus-months": "Lebih dari 3 bulan",
+                    "flexible": "Fleksibel"
+                }
+            },
+            "message": {
+                "label": "Ceritakan kebutuhan Anda",
+                "placeholder": "Ceritakan masalah, kebutuhan, atau ide project Anda..."
+            }
+        },
+        "footer": {
+            "note": "Kami akan menghubungi Anda setelah mempelajari kebutuhan project.",
+            "button": "Kirim Request"
+        }
+    },
+    "portfolio-public": {
+        "eyebrow": "PORTOFOLIO",
+        "hero-title": "Solusi digital",
+        "hero-title-highlight": "untuk kebutuhan bisnis.",
+        "hero-description": "Lihat berbagai website dan software custom yang telah kami bangun untuk membantu bisnis bekerja lebih efektif, terstruktur, dan siap berkembang.",
+        "stats": {
+            "projects": "Projects",
+            "categories": "Categories",
+            "selected-works": "Selected Works"
+        },
+        "scroll": "SCROLL UNTUK MELIHAT",
+        "selected-works": "SELECTED WORKS",
+        "showcase-title": "Apa yang telah",
+        "showcase-title-highlight": "kami bangun.",
+        "showcase-description": "Setiap project dirancang berdasarkan kebutuhan, karakter, dan proses bisnis masing-masing client.",
+        "view": "Lihat",
+        "explore-project": "Lihat Project",
+        "empty": {
+            "title": "Belum ada project",
+            "description": "Belum ada portfolio pada kategori ini."
+        },
+        "cta": {
+            "label": "MULAI PROJECT",
+            "title": "Punya ide?",
+            "title-highlight": "Mari wujudkan.",
+            "description": "Ceritakan kebutuhan bisnis Anda kepada kami. Kami akan membantu menerjemahkannya menjadi solusi digital yang tepat.",
+            "button": "Diskusikan Project Anda",
+            "note": "Konsultasi awal tanpa biaya"
+        }
+    },
+    "web-company-profile": {
+        "hero": {
+            "eyebrow": "WEBSITE COMPANY PROFILE",
+            "title": "Buat Bisnis Anda",
+            "title-highlight": "Terlihat Lebih Profesional.",
+            "description": "Bangun digital presence yang profesional melalui website company profile modern, responsif, dan dirancang sesuai karakter serta kebutuhan bisnis Anda.",
+            "btn-consult": "Konsultasikan Projek",
+            "btn-portfolio": "Lihat Portfolio",
+            "whatsapp-message": "Halo Saskardigital, saya tertarik untuk berkonsultasi mengenai pembuatan website company profile.%0A%0ASaya ingin mengetahui lebih lanjut mengenai proses, fitur, dan estimasi project yang sesuai dengan kebutuhan bisnis saya.%0A%0AMohon informasinya. Terima kasih."
+        },
+        "trust": {
+            "modern-design": {
+                "title": "Modern Design",
+                "description": "Tampilan profesional dan relevan"
+            },
+            "responsive": {
+                "title": "Responsive Website",
+                "description": "Nyaman digunakan di berbagai device"
+            },
+            "custom-development": {
+                "title": "Custom Development",
+                "description": "Disesuaikan dengan kebutuhan bisnis"
+            },
+            "business-focused": {
+                "title": "Business Focused",
+                "description": "Tidak hanya bagus, tetapi fungsional"
+            }
+        },
+        "problem": {
+            "label": "DIGITAL PRESENCE",
+            "title": "Bisnis Anda sudah berkembang.",
+            "title-highlight": "Tapi, apakah digital presence Anda sudah terlihat profesional?",
+            "description-1": "Saat calon pelanggan mencari bisnis Anda secara online, website sering kali menjadi salah satu hal pertama yang mereka lihat.",
+            "description-2": "Website yang tidak tersedia, terlihat kurang profesional, atau sulit digunakan dapat membuat calon pelanggan ragu sebelum mengenal bisnis Anda lebih jauh.",
+            "highlight": "Jadikan website sebagai representasi profesional bisnis Anda."
+        },
+        "why-website": {
+            "label": "WHY YOUR BUSINESS NEEDS A WEBSITE",
+            "title": "Lebih dari sekadar",
+            "title-highlight": "halaman informasi.",
+            "description": "Website company profile dapat menjadi pusat informasi bisnis sekaligus membangun kepercayaan calon pelanggan.",
+            "items": {
+                "credibility": {
+                    "title": "Membangun Kredibilitas",
+                    "description": "Tampilkan bisnis Anda dengan identitas yang profesional sehingga lebih mudah dipercaya oleh calon pelanggan dan partner."
+                },
+                "structured-information": {
+                    "title": "Informasi Lebih Terstruktur",
+                    "description": "Sajikan informasi perusahaan, layanan, portfolio, dan kontak dalam satu tempat yang mudah dipahami."
+                },
+                "discoverable": {
+                    "title": "Lebih Mudah Ditemukan",
+                    "description": "Berikan calon pelanggan tempat resmi untuk mengenal bisnis Anda ketika mereka mencari informasi secara online."
+                },
+                "new-opportunities": {
+                    "title": "Membuka Peluang Baru",
+                    "description": "Website dapat membantu memperluas jangkauan bisnis dan membuka peluang kerja sama baru."
+                }
+            }
+        },
+        "features": {
+            "label": "WHAT YOU GET",
+            "title": "Website yang dirancang",
+            "title-highlight": "untuk bisnis Anda.",
+            "description": "Kami tidak menggunakan pendekatan satu desain untuk semua bisnis. Setiap website dikembangkan dengan mempertimbangkan karakter, kebutuhan, dan tujuan bisnis Anda.",
+            "button": "Diskusikan kebutuhan Anda",
+            "items": {
+                "custom-design": {
+                    "title": "Custom Design",
+                    "description": "Desain disesuaikan dengan identitas dan karakter bisnis Anda."
+                },
+                "responsive": {
+                    "title": "Responsive",
+                    "description": "Tampilan optimal di desktop, tablet, maupun smartphone."
+                },
+                "fast-optimized": {
+                    "title": "Fast & Optimized",
+                    "description": "Struktur website dibuat agar ringan dan nyaman digunakan."
+                },
+                "seo-ready": {
+                    "title": "SEO Ready",
+                    "description": "Struktur dasar website dipersiapkan agar lebih mudah ditemukan."
+                },
+                "contact-whatsapp": {
+                    "title": "Contact & WhatsApp",
+                    "description": "Permudah calon pelanggan untuk menghubungi bisnis Anda."
+                },
+                "developable": {
+                    "title": "Developable",
+                    "description": "Website dapat dikembangkan sesuai kebutuhan bisnis di masa depan."
+                }
+            }
+        },
+        "portfolio": {
+            "label": "SELECTED WORKS",
+            "title": "Website yang merepresentasikan",
+            "title-highlight": "bisnis secara profesional.",
+            "description": "Beberapa project yang menjadi representasi pendekatan kami dalam membangun website dan solusi digital untuk bisnis.",
+            "view-project": "VIEW PROJECT",
+            "footer-label": "Ingin melihat lebih banyak project kami?",
+            "view-all": "Lihat semua portfolio"
+        },
+        "process": {
+            "label": "OUR PROCESS",
+            "title": "Dari kebutuhan bisnis",
+            "title-highlight": "menjadi website.",
+            "description": "Kami bekerja dengan proses yang terstruktur agar setiap tahap project memiliki arah yang jelas.",
+            "steps": {
+                "understand": {
+                    "title": "Understand",
+                    "description": "Memahami bisnis, kebutuhan, target audience, dan tujuan website."
+                },
+                "plan": {
+                    "title": "Plan",
+                    "description": "Menyusun struktur halaman, konten, fitur, dan alur website."
+                },
+                "design": {
+                    "title": "Design",
+                    "description": "Membangun visual dan user experience yang sesuai dengan karakter bisnis."
+                },
+                "build": {
+                    "title": "Build",
+                    "description": "Mengembangkan website dengan teknologi yang sesuai kebutuhan project."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "description": "Website dipersiapkan untuk digunakan dan mendukung kebutuhan bisnis Anda."
+                }
+            }
+        },
+        "package": {
+            "label": "PROJECT INVESTMENT",
+            "title": "Setiap bisnis memiliki",
+            "title-highlight": "kebutuhan yang berbeda.",
+            "description": "Karena itu, kami tidak memaksakan satu paket untuk semua bisnis. Scope, fitur, desain, dan kebutuhan teknis akan disesuaikan dengan project Anda.",
+            "card-label": "WEBSITE COMPANY PROFILE",
+            "card-title": "Harga disesuaikan",
+            "card-title-highlight": "dengan kebutuhan project.",
+            "card-description": "Ceritakan kebutuhan website Anda kepada kami dan dapatkan estimasi yang sesuai dengan scope project.",
+            "button": "Diskusikan Project"
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Pertanyaan yang",
+            "title-highlight": "sering ditanyakan.",
+            "description": "Masih memiliki pertanyaan sebelum memulai project? Berikut beberapa hal yang sering ditanyakan client.",
+            "questions": [
+                {
+                    "question": "Apakah desain website bisa custom?",
+                    "answer": "Ya. Kami dapat menyesuaikan desain dengan identitas visual, kebutuhan, karakter, dan target bisnis Anda."
+                },
+                {
+                    "question": "Apakah website responsive?",
+                    "answer": "Ya. Website dikembangkan agar dapat digunakan dengan baik pada desktop, tablet, maupun smartphone."
+                },
+                {
+                    "question": "Apakah bisa menggunakan domain sendiri?",
+                    "answer": "Tentu. Anda dapat menggunakan domain bisnis yang sudah dimiliki atau kami dapat membantu proses pengadaan domain."
+                },
+                {
+                    "question": "Berapa lama proses pembuatannya?",
+                    "answer": "Durasi project bergantung pada scope, jumlah halaman, fitur, dan proses revisi yang dibutuhkan."
+                },
+                {
+                    "question": "Apakah website bisa dikembangkan lagi?",
+                    "answer": "Bisa. Website dapat dikembangkan dengan fitur tambahan sesuai kebutuhan bisnis di kemudian hari."
+                }
+            ]
+        },
+        "cta": {
+            "label": "READY TO BUILD?",
+            "title": "Sudah waktunya bisnis Anda memiliki",
+            "title-highlight": "digital presence yang profesional.",
+            "description": "Ceritakan bisnis dan kebutuhan website Anda. Kami akan membantu menerjemahkannya menjadi solusi digital yang tepat.",
+            "button": "Mulai Konsultasi"
+        }
+    },
+    "software-custom": {
+        "hero": {
+            "title": "Bangun Sistem Digital yang",
+            "title-highlight": "Benar-Benar Sesuai Bisnis Anda.",
+            "description": "Kami membantu bisnis mengubah proses kerja yang rumit, manual, dan tidak terstruktur menjadi software yang lebih terintegrasi, efisien, dan siap berkembang.",
+            "btn-consult": "Konsultasikan Kebutuhan Anda",
+            "btn-services": "Lihat Layanan",
+            "note": "Dibangun berdasarkan kebutuhan dan proses bisnis Anda",
+            "message": "Halo Saskardigital, saya ingin berkonsultasi mengenai kebutuhan software untuk bisnis saya. Saya ingin mengetahui solusi yang paling sesuai dengan kebutuhan dan proses bisnis kami. Mohon informasi lebih lanjut mengenai proses konsultasi dan estimasi project. Terima kasih."
+        },
+        "intro": {
+            "label": "BUKAN SEKADAR MEMBUAT SOFTWARE",
+            "title": "Kami membangun sistem untuk membantu",
+            "title-highlight": "bisnis bekerja lebih baik.",
+            "description": "Software yang baik bukan hanya tentang banyaknya fitur. Yang lebih penting adalah bagaimana sistem tersebut dapat membantu bisnis bekerja lebih cepat, mengurangi pekerjaan yang tidak perlu, dan memberikan informasi yang dibutuhkan untuk mengambil keputusan."
+        },
+        "problems": {
+            "label": "APAKAH BISNIS ANDA MENGALAMINYA?",
+            "title": "Ketika bisnis berkembang,",
+            "title-highlight": "cara kerja juga perlu berkembang.",
+            "description": "Banyak bisnis mulai menghadapi masalah ketika jumlah pelanggan, transaksi, dan tim semakin bertambah tetapi proses kerja masih dilakukan dengan cara yang sama.",
+            "items": {
+                "manual": {
+                    "title": "Terlalu Banyak Proses Manual",
+                    "description": "Pekerjaan yang seharusnya dapat dilakukan sistem masih bergantung pada Excel, spreadsheet, atau pencatatan manual."
+                },
+                "scattered-data": {
+                    "title": "Data Tersebar",
+                    "description": "Informasi bisnis tersimpan di berbagai tempat sehingga sulit mencari, memantau, dan mengolah data."
+                },
+                "monitoring": {
+                    "title": "Sulit Monitoring",
+                    "description": "Pemilik bisnis membutuhkan waktu lebih lama untuk mengetahui kondisi operasional dan mengambil keputusan."
+                },
+                "workflow": {
+                    "title": "Workflow Tidak Efisien",
+                    "description": "Tim melakukan pekerjaan yang sama berulang kali karena belum memiliki sistem yang mendukung proses bisnis."
+                }
+            }
+        },
+        "why-software": {
+            "number-label": "FROM MANUAL TO DIGITAL",
+            "title": "Jangan biarkan",
+            "title-highlight": "pertumbuhan bisnis ",
+            "title-ending": "membuat operasional semakin rumit.",
+            "description-1": "Ketika bisnis masih kecil, spreadsheet, chat, dan proses manual mungkin masih terasa cukup. Namun ketika bisnis berkembang, cara tersebut dapat membuat pekerjaan semakin sulit dikontrol.",
+            "description-2": "Dengan sistem yang tepat, proses bisnis dapat dibuat lebih terstruktur. Data dapat dikumpulkan dalam satu tempat, pekerjaan dapat dipantau, dan tim memiliki cara kerja yang lebih konsisten.",
+            "highlight-title": "Software bukan hanya untuk perusahaan besar.",
+            "highlight-description": "Sistem yang tepat justru dapat membantu bisnis berkembang dengan lebih terarah."
+        },
+        "services": {
+            "label": "APA YANG BISA KAMI BANGUN?",
+            "title": "Satu partner untuk berbagai ",
+            "title-highlight": "kebutuhan software bisnis.",
+            "description": "Kami tidak membatasi solusi hanya pada satu jenis aplikasi. Sistem dikembangkan berdasarkan kebutuhan, proses, dan tujuan bisnis Anda.",
+            "items": {
+                "web-application": {
+                    "title": "Web Application",
+                    "description": "Aplikasi berbasis web untuk membantu bisnis mengelola proses, data, transaksi, dan operasional secara lebih terstruktur."
+                },
+                "mobile-application": {
+                    "title": "Mobile Application",
+                    "description": "Aplikasi mobile yang membantu tim maupun pelanggan mengakses layanan dan informasi bisnis dengan lebih mudah."
+                },
+                "business-system": {
+                    "title": "Business System",
+                    "description": "Sistem yang dirancang mengikuti alur kerja bisnis untuk mengurangi pekerjaan manual dan meningkatkan efisiensi."
+                },
+                "crm": {
+                    "title": "CRM",
+                    "description": "Kelola leads, customer, follow-up, campaign, hingga aktivitas sales dalam satu sistem yang terintegrasi."
+                },
+                "hris": {
+                    "title": "HRIS",
+                    "description": "Sistem untuk membantu mengelola data karyawan, absensi, recruitment, hingga proses administrasi HR."
+                },
+                "custom-software": {
+                    "title": "Custom Software",
+                    "description": "Software dengan fitur dan workflow yang dibuat khusus berdasarkan kebutuhan dan proses bisnis Anda."
+                }
+            }
+        },
+        "custom": {
+            "label": "KENAPA SOFTWARE CUSTOM?",
+            "title": "Karena setiap bisnis",
+            "title-highlight": "memiliki cara kerja yang berbeda.",
+            "description-1": "Software siap pakai memang dapat menjadi solusi untuk kebutuhan tertentu. Namun tidak semua proses bisnis dapat dipaksa mengikuti cara kerja sebuah aplikasi.",
+            "description-2": "Dengan software custom, sistem dapat dirancang mengikuti proses bisnis Anda — bukan sebaliknya.",
+            "button": "Diskusikan Kebutuhan Anda",
+            "items": {
+                "features": {
+                    "title": "Fitur sesuai kebutuhan",
+                    "description": "Hanya membangun fitur yang benar-benar dibutuhkan bisnis."
+                },
+                "workflow": {
+                    "title": "Workflow mengikuti bisnis",
+                    "description": "Sistem dirancang berdasarkan proses kerja yang sudah berjalan."
+                },
+                "developable": {
+                    "title": "Dapat dikembangkan",
+                    "description": "Software dapat terus dikembangkan ketika kebutuhan bisnis berubah."
+                },
+                "controlled-data": {
+                    "title": "Data lebih terkontrol",
+                    "description": "Informasi bisnis dapat dikelola dan dipantau melalui sistem."
+                }
+            }
+        },
+        "process": {
+            "label": "CARA KAMI BEKERJA",
+            "title": "Dari masalah bisnis menjadi",
+            "title-highlight": "solusi digital.",
+            "description": "Kami memulai dari memahami bisnis Anda, bukan langsung berbicara tentang kode dan teknologi.",
+            "steps": {
+                "understand": {
+                    "number": "01",
+                    "title": "Understand",
+                    "description": "Kami memahami kebutuhan, masalah, dan proses bisnis Anda."
+                },
+                "plan": {
+                    "number": "02",
+                    "title": "Plan",
+                    "description": "Kami menyusun solusi, fitur, struktur sistem, dan alur pengguna."
+                },
+                "build": {
+                    "number": "03",
+                    "title": "Build",
+                    "description": "Sistem dikembangkan secara terstruktur berdasarkan kebutuhan yang telah disepakati."
+                },
+                "test": {
+                    "number": "04",
+                    "title": "Test",
+                    "description": "Kami melakukan pengecekan untuk memastikan sistem berjalan sesuai kebutuhan."
+                },
+                "deliver": {
+                    "number": "05",
+                    "title": "Deliver",
+                    "description": "Sistem disiapkan agar dapat digunakan oleh tim dan bisnis Anda."
+                },
+                "support": {
+                    "number": "06",
+                    "title": "Support",
+                    "description": "Kami tetap dapat membantu setelah sistem selesai dikembangkan."
+                }
+            }
+        },
+        "benefits": {
+            "label": "HASIL YANG KAMI KEJAR",
+            "title": "Bukan sekadar",
+            "title-highlight": "software selesai dibuat.",
+            "description": "Tujuan akhirnya adalah membantu bisnis memiliki proses kerja yang lebih baik dan sistem yang dapat terus berkembang.",
+            "items": {
+                "structured": {
+                    "number": "01",
+                    "title": "Proses Lebih Terstruktur",
+                    "description": "Alur kerja bisnis dapat dibuat lebih jelas, terukur, dan mudah diikuti oleh tim."
+                },
+                "centralized": {
+                    "number": "02",
+                    "title": "Data Lebih Terpusat",
+                    "description": "Informasi penting bisnis dapat dikelola dalam satu sistem sehingga lebih mudah diakses dan dipantau."
+                },
+                "manual": {
+                    "number": "03",
+                    "title": "Mengurangi Pekerjaan Manual",
+                    "description": "Proses berulang dapat dibantu oleh sistem sehingga tim dapat lebih fokus pada pekerjaan yang bernilai."
+                },
+                "growth": {
+                    "number": "04",
+                    "title": "Mendukung Pertumbuhan Bisnis",
+                    "description": "Sistem dapat dikembangkan mengikuti kebutuhan bisnis ketika perusahaan semakin besar."
+                }
+            }
+        },
+        "portfolio": {
+            "label": "CONTOH SOLUSI",
+            "title": "Software yang dapat disesuaikan",
+            "title-highlight": "dengan kebutuhan bisnis."
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Pertanyaan yang sering",
+            "title-highlight": "ditanyakan.",
+            "questions": [
+                {
+                    "question": "Apakah software dapat dibuat sesuai kebutuhan bisnis?",
+                    "answer": "Ya. Software custom dikembangkan berdasarkan kebutuhan, proses bisnis, dan workflow yang Anda miliki."
+                },
+                {
+                    "question": "Apakah Saskardigital bisa membuat aplikasi mobile?",
+                    "answer": "Ya. Kami dapat membantu pengembangan aplikasi mobile sebagai bagian dari solusi digital bisnis."
+                },
+                {
+                    "question": "Apakah bisa mengembangkan CRM atau HRIS?",
+                    "answer": "Bisa. Sistem seperti CRM, HRIS, dashboard internal, business management system, dan berbagai aplikasi operasional dapat dikembangkan sesuai kebutuhan."
+                },
+                {
+                    "question": "Apakah software bisa dikembangkan lagi di masa depan?",
+                    "answer": "Bisa. Kami dapat merancang sistem dengan struktur yang memungkinkan penambahan fitur dan pengembangan berikutnya."
+                },
+                {
+                    "question": "Bagaimana cara memulai project software custom?",
+                    "answer": "Anda dapat menghubungi kami terlebih dahulu untuk mendiskusikan masalah, proses bisnis, dan kebutuhan sistem. Setelah itu kami akan membantu menyusun solusi yang sesuai."
+                }
+            ]
+        },
+        "cta": {
+            "label": "SIAP MEMULAI?",
+            "title": "Punya proses bisnis yang ingin",
+            "title-highlight": "dibuat lebih sederhana?",
+            "description": "Ceritakan kebutuhan dan tantangan bisnis Anda kepada kami. Mari cari tahu bagaimana solusi digital yang tepat dapat membantu bisnis Anda bekerja lebih efektif.",
+            "button": "Konsultasikan Project Anda",
+            "note": "Tidak harus sudah memiliki spesifikasi teknis. Kami bantu mulai dari kebutuhan bisnis Anda."
+        }
+    },
+    "client-experience": {
+        "eyebrow": "PENGALAMAN CLIENT",
+        "hero-title": "Pengalaman Anda",
+        "hero-title-highlight": "Berarti Bagi Kami.",
+        "hero-description": "Kami ingin mendengar pengalaman Anda selama bekerja bersama Saskardigital. Masukan dari Anda membantu kami untuk terus berkembang dan membangun solusi digital yang lebih baik.",
+        "form-label": "MASUKAN ANDA",
+        "form-title": "Ceritakan tentang",
+        "form-title-highlight": "pengalaman Anda.",
+        "form-description": "Pengalaman Anda berarti bagi kami. Ceritakan bagaimana Saskardigital membantu bisnis Anda dan apa pendapat Anda tentang solusi yang telah kita bangun bersama.",
+        "feedback": {
+            "label": "MASUKAN CLIENT",
+            "number": "01",
+            "description": "Kami menghargai pengalaman dan masukan jujur dari Anda."
+        },
+        "fields": {
+            "name": {
+                "label": "Nama Anda",
+                "placeholder": "Masukkan nama Anda"
+            },
+            "position": {
+                "label": "Jabatan / Peran",
+                "placeholder": "Contoh: Direktur, Manager, Owner"
+            },
+            "message": {
+                "label": "Pengalaman Anda",
+                "hint": "Ceritakan pendapat Anda",
+                "placeholder": "Ceritakan pengalaman Anda selama bekerja bersama Saskardigital..."
+            }
+        },
+        "privacy-note": "Masukan Anda akan ditinjau terlebih dahulu sebelum ditampilkan di website.",
+        "button": "Kirim Pengalaman",
+        "button-loading": "Mengirim...",
+        "trust": {
+            "label": "TERIMA KASIH",
+            "title": "Setiap pengalaman",
+            "title-highlight": "membantu kami menjadi lebih baik.",
+            "description": "Terima kasih telah mempercayai Saskardigital dan mengizinkan kami menjadi bagian dari perjalanan digital bisnis Anda."
+        },
+        "success": {
+            "title": "Terima Kasih Sudah Berbagi.",
+            "description": "Kami sangat menghargai waktu dan masukan Anda. Pengalaman Anda telah berhasil dikirim."
+        },
+        "error": {
+            "title": "Terjadi Kesalahan.",
+            "description": "Pengalaman Anda belum dapat dikirim saat ini. Silakan coba lagi."
+        }
+    }
+}

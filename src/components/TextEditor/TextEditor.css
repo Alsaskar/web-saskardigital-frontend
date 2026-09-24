@@ -1,0 +1,287 @@
+.rich-text-editor {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* =====================================
+   TOOLBAR
+===================================== */
+
+.rich-text-toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    min-height: 54px;
+    padding: 8px 10px;
+
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Group */
+
+.toolbar-group {
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+
+    padding-right: 7px;
+    margin-right: 5px;
+
+    border-right: 1px solid #dee2e6;
+}
+
+.toolbar-group-last {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/* =====================================
+   TOOLBAR BUTTON
+===================================== */
+
+.rich-text-toolbar button {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 5px;
+
+    background: transparent;
+    color: #495057;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+/* Hover */
+
+.rich-text-toolbar button:hover:not(:disabled) {
+    background: #e9ecef;
+    color: #212529;
+}
+
+/* Active */
+
+.rich-text-toolbar button.active {
+    background: #212529;
+    color: #ffffff;
+}
+
+/* Disabled */
+
+.rich-text-toolbar button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* =====================================
+   EDITOR AREA
+===================================== */
+
+.rich-text-content {
+    background: #ffffff;
+
+    height: 150px;
+
+    overflow-y: auto;
+}
+
+/* =====================================
+   PROSEMIRROR
+===================================== */
+
+.rich-text-content .ProseMirror {
+    min-height: 100%;
+
+    padding: 16px 20px;
+
+    outline: none;
+
+    color: #212529;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+/* =====================================
+   PLACEHOLDER
+===================================== */
+
+.rich-text-content .ProseMirror p.is-editor-empty:first-child::before {
+    content: 'Tulis isi di sini...';
+
+    float: left;
+
+    height: 0;
+
+    color: #adb5bd;
+
+    pointer-events: none;
+}
+
+/* =====================================
+   PARAGRAPH
+===================================== */
+
+.rich-text-content .ProseMirror p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.5;
+}
+
+.rich-text-content .ProseMirror > p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+.rich-text-content .ProseMirror h1 {
+    font-size: 32px;
+    line-height: 1.25;
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+}
+
+.rich-text-content .ProseMirror h2 {
+    font-size: 26px;
+    line-height: 1.3;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+}
+
+.rich-text-content .ProseMirror h3 {
+    font-size: 21px;
+    line-height: 1.35;
+
+    margin-top: 16px;
+    margin-bottom: 6px;
+
+    font-weight: 700;
+}
+
+/* Heading pertama tidak perlu margin atas */
+
+.rich-text-content .ProseMirror > h1:first-child,
+.rich-text-content .ProseMirror > h2:first-child,
+.rich-text-content .ProseMirror > h3:first-child {
+    margin-top: 0;
+}
+
+/* =====================================
+   LIST
+===================================== */
+
+.rich-text-content .ProseMirror ul,
+.rich-text-content .ProseMirror ol {
+    padding-left: 24px;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    line-height: 1.5;
+}
+
+.rich-text-content .ProseMirror li {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    line-height: 1.5;
+}
+
+/* Paragraph di dalam list */
+
+.rich-text-content .ProseMirror li p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* =====================================
+   BLOCKQUOTE
+===================================== */
+
+.rich-text-content .ProseMirror blockquote {
+    margin: 12px 0;
+
+    padding: 8px 14px;
+
+    border-left: 4px solid #6c757d;
+
+    background: #f8f9fa;
+
+    color: #6c757d;
+
+    line-height: 1.5;
+}
+
+/* =====================================
+   LINK
+===================================== */
+
+.rich-text-content .ProseMirror a {
+    color: #0d6efd;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+/* =====================================
+   SELECTION
+===================================== */
+
+.rich-text-content .ProseMirror ::selection {
+    background: rgba(13, 110, 253, 0.15);
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+.rich-text-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.rich-text-content::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+.rich-text-content::-webkit-scrollbar-thumb {
+    background: #ced4da;
+    border-radius: 10px;
+}
+
+.rich-text-content::-webkit-scrollbar-thumb:hover {
+    background: #adb5bd;
+}

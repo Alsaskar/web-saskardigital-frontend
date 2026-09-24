@@ -1,0 +1,50 @@
+@use 'sass:color';
+@use 'sass:map';
+
+$toast-themes: (
+  'success': (
+    border-color: #198754,
+  ),
+  'danger': (
+    border-color: #dc3545,
+  ),
+);
+
+.toast-custom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1100;
+  border-radius: 10px;
+  background-color: #ffff;
+  animation: toast-animated 0.4s ease-in-out;
+
+  .toast-header {
+    &.toast-custom-success {
+      color: #198754;
+    }
+
+    &.toast-custom-danger {
+      color: #dc3545;
+    }
+
+    .icon {
+      font-size: 1.1rem;
+    }
+  }
+
+  @each $name, $colors in $toast-themes {
+    &.toast-custom-#{$name} {
+      border-left: 4px solid map.get($colors, border-color) !important;
+    }
+  }
+}
+
+@keyframes toast-animated {
+  from {
+    transform: translateX(375px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

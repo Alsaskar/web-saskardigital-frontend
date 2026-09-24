@@ -1,0 +1,798 @@
+{
+    "navbar": {
+        "about": "ABOUT",
+        "services": "SERVICES",
+        "submenu-services": {
+            "menu-1": "Web Company Profile",
+            "menu-2": "Custom Software"
+        },
+        "portfolio": "PORTFOLIO",
+        "contact": "CONTACT"
+    },
+    "navbar-public": {
+        "home": "HOME",
+        "services": "SERVICES",
+        "submenu-services": {
+            "menu-1": "Web Company Profile",
+            "menu-2": "Custom Software"
+        },
+        "portfolio": "PORTFOLIO"
+    },
+    "hero": {
+        "title": "Digital Solutions for Businesses Ready to Grow",
+        "description": "Transform complex business processes into simpler, more measurable, and manageable workflows with digital solutions tailored to your business needs.",
+        "txt-button-1": "Let’s Discuss Your Business",
+        "txt-button-2": "View Our Portfolio"
+    },
+    "about": {
+        "eyebrow": "ABOUT SASKARDIGITAL",
+        "title": "Your Digital Partner for Building a Better Business",
+        "brand": "PT Saskardigital Solusi Indonesia",
+        "description-1": "is a digital solutions company helping businesses transform through technology — from custom software and applications to websites designed around each client’s specific needs.",
+        "description-2": "With a team of professionals bringing over 10 years of experience in the technology industry, we understand that every business has its own challenges, workflows, and operational needs. That’s why we start every project by understanding your business processes, operational requirements, and long-term goals — ensuring that the solution we build is not just functional, but truly relevant and valuable to your business.",
+        "principles": {
+            "eyebrow": "OUR PRINCIPLES",
+            "title": "How We Work",
+            "relevant-solutions": {
+                "title": "Relevant Solutions",
+                "description": "Every system is built around your actual business needs, rather than relying on generic templates."
+            },
+            "collaboration": {
+                "title": "Collaboration, Not Just Execution",
+                "description": "We work closely with our clients throughout every stage, from planning to implementation."
+            },
+            "quality": {
+                "title": "Quality & System Stability",
+                "description": "We focus on building software that is not only functional, but also reliable, maintainable, and ready to evolve as your business grows."
+            },
+            "transparency": {
+                "title": "Process Transparency",
+                "description": "Clear communication and transparent progress throughout every stage of the project."
+            },
+            "support": {
+                "title": "Long-Term Support",
+                "description": "Our relationship doesn’t end at project delivery. We continue to support our clients through maintenance and ongoing support services."
+            }
+        },
+        "txt-button": "Explore Our Services"
+    },
+    "services": {
+        "eyebrow": "OUR SERVICES",
+        "title": "Technology Designed Around Your Business Needs",
+        "company-profile": {
+            "title": "Company Profile Website",
+            "description": "Build a professional digital presence that strengthens your business credibility and builds trust with your audience.",
+            "txt-button": "Learn More"
+        },
+        "web-application": {
+            "title": "Web Application",
+            "description": "Web-based applications designed around your business requirements, workflows, and operational processes.",
+            "txt-button": "Learn More"
+        },
+        "mobile-application": {
+            "title": "Mobile Application",
+            "description": "Make your business services more accessible with fast, modern, and user-friendly mobile applications.",
+            "txt-button": "Learn More"
+        },
+        "business-system": {
+            "title": "Business Systems / CRM / HRIS",
+            "description": "Integrated systems that help businesses manage operations, customer relationships, and human resources more efficiently.",
+            "txt-button": "Learn More"
+        }
+    },
+    "how-we-work": {
+        "eyebrow": "HOW WE WORK",
+        "title": "From Ideas to Digital Solutions",
+        "description": "Every project follows a structured process, from understanding your business needs to providing ongoing support after the solution is implemented.",
+        "steps": {
+            "understand": {
+                "number": "01",
+                "title": "Understand",
+                "description": "Understand your business needs, workflows, and processes."
+            },
+            "plan": {
+                "number": "02",
+                "title": "Plan",
+                "description": "Define the right solution, features, and system workflow."
+            },
+            "build": {
+                "number": "03",
+                "title": "Build",
+                "description": "Develop the solution using a structured and reliable approach."
+            },
+            "deliver": {
+                "number": "04",
+                "title": "Deliver",
+                "description": "Complete the project and ensure the solution is ready to be used effectively."
+            },
+            "support": {
+                "number": "05",
+                "title": "Support",
+                "description": "Provide ongoing support after the project is completed."
+            }
+        }
+    },
+    "why-choose-us": {
+        "eyebrow": "WHY CHOOSE US",
+        "title": "Why Businesses Choose Saskardigital?",
+        "description": "We don’t just build software. We understand the business behind it to create solutions that are relevant, measurable, and built to grow with your business.",
+        "caption": "OUR APPROACH",
+        "items": {
+            "tailored": {
+                "number": "01",
+                "title": "Tailored to Your Business",
+                "description": "Every solution is designed around your business needs, processes, and unique characteristics."
+            },
+            "communication": {
+                "number": "02",
+                "title": "Clear Communication",
+                "description": "We keep communication open and transparent so that every stage, progress update, and requirement is clearly understood."
+            },
+            "scalable": {
+                "number": "03",
+                "title": "Built to Scale",
+                "description": "Our systems are designed to support your current business needs while allowing room for future growth and development."
+            },
+            "business-focused": {
+                "number": "04",
+                "title": "Focused on Business Needs",
+                "description": "We don’t simply add features. We make sure every part of the system serves a clear and meaningful purpose for your business."
+            },
+            "structured": {
+                "number": "05",
+                "title": "Structured Approach",
+                "description": "From analysis to implementation, every project is managed through a clear, structured, and measurable process."
+            }
+        }
+    },
+    "request-project": {
+        "label": "REQUEST PROJECT",
+        "title": "Have an Idea or Business Challenge You Want to Solve?",
+        "description": "Tell us about your business needs. The Saskardigital team will understand your requirements and help you find the right digital solution.",
+        "note-title": "Start with a consultation",
+        "note-description": "You don’t need to have all the specifications figured out. Let’s discuss your needs first.",
+        "contact-label": "OR GET IN TOUCH"
+    },
+    "portfolio": {
+        "eyebrow": "PORTFOLIO",
+        "title": "Digital Solutions We’ve Built",
+        "description": "From websites to business systems, we build digital solutions designed to address real business needs and challenges.",
+        "projects": {
+            "business-system": "BUSINESS SYSTEM",
+            "crm-business-management": "CRM & Business Management System",
+            "company-profile": "COMPANY PROFILE",
+            "corporate-company-profile": "Corporate Company Profile",
+            "hris": "HRIS",
+            "hris-employee-management": "HRIS & Employee Management",
+            "umkm-system": "UMKM SYSTEM",
+            "digital-laundry-management": "Digital Laundry Management System"
+        },
+        "project-types": {
+            "web-application": "Web Application",
+            "website": "Website",
+            "saas-platform": "SaaS Platform"
+        },
+        "footer-label": "SELECTED PROJECTS",
+        "view-all": "View All Projects"
+    },
+    "our-clients": {
+        "eyebrow": "OUR CLIENTS",
+        "title": "Trusted by Businesses Across Industries",
+        "description": "We help businesses build digital solutions that fit their specific needs, workflows, and operational processes.",
+        "trusted-partners": "TRUSTED PARTNERS"
+    },
+    "location": {
+        "eyebrow": "VISIT OUR OFFICE",
+        "title": "Visit Us",
+        "description": "Want to discuss your business’s digital needs in person? We’re happy to meet and explore the right solution together.",
+        "office": "OFFICE",
+        "contact": "CONTACT",
+        "office-hours": "OFFICE HOURS",
+        "days": "Monday – Friday",
+        "hours": "08:00 – 17:00 WITA",
+        "get-directions": "Get Directions",
+        "office-label": "Saskardigital Office"
+    },
+    "footer": {
+        "description": "Digital solutions designed to help businesses work better, operate more efficiently, and grow with confidence.",
+        "navigation": "NAVIGATION",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "services": "SERVICES",
+        "custom-software": "Custom Software",
+        "company-profile": "Web Company Profile",
+        "contact-title": "CONTACT",
+        "office-hours": "Monday – Friday, 08:00 – 17:00 WITA",
+        "follow-us": "FOLLOW US",
+        "back-to-top": "Back to top"
+    },
+    "faq": {
+        "label": "FAQ",
+        "title": "Frequently Asked Questions",
+        "description": "Here are some questions you may have before starting a project with Saskardigital.",
+        "questions": [
+            {
+                "question": "Does Saskardigital accept custom software projects?",
+                "answer": "Yes. We develop digital solutions based on your business needs, workflows, and processes."
+            },
+            {
+                "question": "Can you build a company profile website?",
+                "answer": "Yes. We create professional company profile websites tailored to your brand identity and business needs."
+            },
+            {
+                "question": "Can you develop an application from scratch?",
+                "answer": "Yes. We can handle the entire process, from requirements analysis and system planning to application development."
+            },
+            {
+                "question": "Can you continue or improve an existing system?",
+                "answer": "Yes. We can evaluate your existing system, technology, and application before planning further development."
+            },
+            {
+                "question": "How do I start a project with Saskardigital?",
+                "answer": "We start with a consultation to understand your needs, discuss the right solution, and prepare a proposal based on your project requirements."
+            },
+            {
+                "question": "How long does a project take to complete?",
+                "answer": "The timeline depends on the project’s complexity, features, and requirements. We will provide a timeline estimate after understanding your needs."
+            },
+            {
+                "question": "Do you provide maintenance and support after the project is completed?",
+                "answer": "Yes. We offer maintenance and support services to help keep your system running smoothly and ready for future improvements."
+            },
+            {
+                "question": "Can I consult with you before deciding on a project?",
+                "answer": "Absolutely. We recommend starting with a consultation so we can understand your business needs and challenges before deciding on the right solution."
+            },
+            {
+                "question": "Can a project be developed gradually based on our budget?",
+                "answer": "Yes. Projects can be developed in stages by prioritizing the most important features first and adding more functionality as your needs grow."
+            },
+            {
+                "question": "Does Saskardigital work with businesses outside your city?",
+                "answer": "Yes. Consultation, communication, and project development can all be handled online, allowing us to work with businesses from different locations."
+            }
+        ]
+    },
+    "client-feedback": {
+        "eyebrow": "CLIENT TESTIMONIALS",
+        "title": "What Our Clients Say About Saskardigital?",
+        "description": "It’s not just about delivering software, but about creating solutions that make a real impact on the way businesses operate.",
+        "bottom-label": "WHAT OUR CLIENTS SAY",
+        "bottom-caption": "CLIENT EXPERIENCE"
+    },
+    "request-project-form": {
+        "step": "01 / PROJECT DETAILS",
+        "title": "Tell Us About Your Project",
+        "fields": {
+            "name": {
+                "label": "Name",
+                "placeholder": "Full name"
+            },
+            "company": {
+                "label": "Company",
+                "placeholder": "Company name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "email@company.com"
+            },
+            "phone": {
+                "label": "WhatsApp",
+                "placeholder": "+62 xxx xxxx xxxx"
+            },
+            "project-type": {
+                "label": "Project Type",
+                "placeholder": "Select project type",
+                "options": {
+                    "company-profile": "Company Profile Website",
+                    "web-application": "Web Application",
+                    "mobile-application": "Mobile Application",
+                    "business-system": "Business System / CRM / HRIS",
+                    "custom": "Custom Project",
+                    "maintenance": "Maintenance / Existing System Development"
+                }
+            },
+            "budget": {
+                "label": "Estimated Budget",
+                "placeholder": "Select budget",
+                "options": {
+                    "under-5": "Below IDR 5 million",
+                    "5-10": "IDR 5 – 10 million",
+                    "10-25": "IDR 10 – 25 million",
+                    "25-50": "IDR 25 – 50 million",
+                    "50-plus": "Above IDR 50 million",
+                    "discuss": "I'd like to discuss"
+                }
+            },
+            "timeline": {
+                "label": "Project Timeline",
+                "placeholder": "Select timeline",
+                "options": {
+                    "asap": "As soon as possible",
+                    "1-month": "Within 1 month",
+                    "1-3-months": "1 – 3 months",
+                    "3-plus-months": "More than 3 months",
+                    "flexible": "Flexible"
+                }
+            },
+            "message": {
+                "label": "Tell Us About Your Needs",
+                "placeholder": "Tell us about your challenges, requirements, or project ideas..."
+            }
+        },
+        "footer": {
+            "note": "We will contact you after reviewing your project requirements.",
+            "button": "Send Request"
+        }
+    },
+    "portfolio-public": {
+        "eyebrow": "PORTFOLIO",
+        "hero-title": "Digital solutions",
+        "hero-title-highlight": "built for business.",
+        "hero-description": "Explore the websites and custom software we’ve built to help businesses work more efficiently, stay organized, and grow with confidence.",
+        "stats": {
+            "projects": "Projects",
+            "categories": "Categories",
+            "selected-works": "Selected Works"
+        },
+        "scroll": "SCROLL TO EXPLORE",
+        "selected-works": "SELECTED WORKS",
+        "showcase-title": "What we’ve",
+        "showcase-title-highlight": "built.",
+        "showcase-description": "Every project is designed around each client’s needs, business characteristics, and workflows.",
+        "view": "View",
+        "explore-project": "Explore Project",
+        "empty": {
+            "title": "No projects yet",
+            "description": "There are no portfolio projects in this category yet."
+        },
+        "cta": {
+            "label": "START A PROJECT",
+            "title": "Have an idea?",
+            "title-highlight": "Let’s bring it to life.",
+            "description": "Tell us about your business needs. We’ll help turn your ideas and challenges into the right digital solution.",
+            "button": "Discuss Your Project",
+            "note": "Initial consultation at no cost"
+        }
+    },
+    "web-company-profile": {
+        "hero": {
+            "eyebrow": "COMPANY PROFILE WEBSITE",
+            "title": "Make Your Business",
+            "title-highlight": "Look More Professional.",
+            "description": "Build a professional digital presence with a modern, responsive company profile website designed around your business identity and needs.",
+            "btn-consult": "Discuss Your Project",
+            "btn-portfolio": "View Portfolio",
+            "whatsapp-message": "Hello Saskardigital, I would like to discuss a company profile website project.%0A%0AI would like to learn more about the process, features, and estimated project scope based on my business needs.%0A%0AI look forward to hearing from you. Thank you."
+        },
+        "trust": {
+            "modern-design": {
+                "title": "Modern Design",
+                "description": "Professional and relevant visual design"
+            },
+            "responsive": {
+                "title": "Responsive Website",
+                "description": "Designed for a seamless experience across devices"
+            },
+            "custom-development": {
+                "title": "Custom Development",
+                "description": "Built around your business requirements"
+            },
+            "business-focused": {
+                "title": "Business Focused",
+                "description": "Not just visually appealing, but functional"
+            }
+        },
+        "problem": {
+            "label": "DIGITAL PRESENCE",
+            "title": "Your business is growing.",
+            "title-highlight": "But does your digital presence look as professional as your business?",
+            "description-1": "When potential customers search for your business online, your website is often one of the first things they see.",
+            "description-2": "Not having a website, having an outdated appearance, or providing a poor user experience can make potential customers hesitate before getting to know your business.",
+            "highlight": "Make your website a professional representation of your business."
+        },
+        "why-website": {
+            "label": "WHY YOUR BUSINESS NEEDS A WEBSITE",
+            "title": "More than just",
+            "title-highlight": "an information page.",
+            "description": "A company profile website can serve as a central source of business information while building trust with potential customers.",
+            "items": {
+                "credibility": {
+                    "title": "Build Credibility",
+                    "description": "Present your business with a professional identity that helps build trust with potential customers and business partners."
+                },
+                "structured-information": {
+                    "title": "Organized Information",
+                    "description": "Present your company information, services, portfolio, and contact details in one clear and easy-to-understand place."
+                },
+                "discoverable": {
+                    "title": "Be Easier to Find",
+                    "description": "Give potential customers an official place to learn more about your business when they search for you online."
+                },
+                "new-opportunities": {
+                    "title": "Create New Opportunities",
+                    "description": "A website can help expand your business reach and open the door to new partnerships and opportunities."
+                }
+            }
+        },
+        "features": {
+            "label": "WHAT YOU GET",
+            "title": "A website designed",
+            "title-highlight": "for your business.",
+            "description": "We don't believe in a one-size-fits-all approach. Every website is developed around your business identity, needs, and goals.",
+            "button": "Discuss Your Requirements",
+            "items": {
+                "custom-design": {
+                    "title": "Custom Design",
+                    "description": "Designed to reflect your business identity and character."
+                },
+                "responsive": {
+                    "title": "Responsive",
+                    "description": "Optimized for desktop, tablet, and smartphone devices."
+                },
+                "fast-optimized": {
+                    "title": "Fast & Optimized",
+                    "description": "Built with a lightweight structure for a smooth user experience."
+                },
+                "seo-ready": {
+                    "title": "SEO Ready",
+                    "description": "Built with a solid foundation to help your website become easier to discover."
+                },
+                "contact-whatsapp": {
+                    "title": "Contact & WhatsApp",
+                    "description": "Make it easier for potential customers to get in touch with your business."
+                },
+                "developable": {
+                    "title": "Built to Evolve",
+                    "description": "Your website can be further developed as your business needs grow."
+                }
+            }
+        },
+        "portfolio": {
+            "label": "SELECTED WORKS",
+            "title": "Websites that represent",
+            "title-highlight": "your business professionally.",
+            "description": "A selection of projects that showcase our approach to building websites and digital solutions for businesses.",
+            "view-project": "VIEW PROJECT",
+            "footer-label": "Want to see more of our work?",
+            "view-all": "View All Projects"
+        },
+        "process": {
+            "label": "OUR PROCESS",
+            "title": "From business needs",
+            "title-highlight": "to a professional website.",
+            "description": "We follow a structured process to ensure every stage of the project has a clear direction.",
+            "steps": {
+                "understand": {
+                    "title": "Understand",
+                    "description": "Understand your business, needs, target audience, and website goals."
+                },
+                "plan": {
+                    "title": "Plan",
+                    "description": "Define the page structure, content, features, and website flow."
+                },
+                "design": {
+                    "title": "Design",
+                    "description": "Create the visual experience and user experience around your business identity."
+                },
+                "build": {
+                    "title": "Build",
+                    "description": "Develop the website using technology that fits your project requirements."
+                },
+                "launch": {
+                    "title": "Launch",
+                    "description": "Prepare your website for launch and ensure it is ready to support your business."
+                }
+            }
+        },
+        "package": {
+            "label": "PROJECT INVESTMENT",
+            "title": "Every business has",
+            "title-highlight": "different needs.",
+            "description": "That's why we don't force every business into the same package. The scope, features, design, and technical requirements are tailored to your project.",
+            "card-label": "COMPANY PROFILE WEBSITE",
+            "card-title": "Pricing is tailored",
+            "card-title-highlight": "to your project needs.",
+            "card-description": "Tell us about your website requirements and we'll provide an estimate based on the project scope.",
+            "button": "Discuss Your Project"
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Frequently",
+            "title-highlight": "asked questions.",
+            "description": "Still have questions before starting your project? Here are some of the questions we often receive.",
+            "questions": [
+                {
+                    "question": "Can the website design be customized?",
+                    "answer": "Yes. We can tailor the design to your visual identity, business needs, brand character, and target audience."
+                },
+                {
+                    "question": "Is the website responsive?",
+                    "answer": "Yes. The website is developed to provide a smooth experience across desktop, tablet, and smartphone devices."
+                },
+                {
+                    "question": "Can I use my own domain?",
+                    "answer": "Absolutely. You can use an existing business domain, or we can assist you with registering a new one."
+                },
+                {
+                    "question": "How long does the development process take?",
+                    "answer": "The timeline depends on the project scope, number of pages, features, and revision process involved."
+                },
+                {
+                    "question": "Can the website be expanded later?",
+                    "answer": "Yes. Additional features can be added as your business needs evolve."
+                }
+            ]
+        },
+        "cta": {
+            "label": "READY TO BUILD?",
+            "title": "It's time for your business to have",
+            "title-highlight": "a professional digital presence.",
+            "description": "Tell us about your business and website needs. We'll help turn them into the right digital solution.",
+            "button": "Start a Consultation"
+        }
+    },
+    "software-custom": {
+        "hero": {
+            "title": "Build a Digital System That",
+            "title-highlight": "Actually Fits Your Business.",
+            "description": "We help businesses transform complex, manual, and unstructured workflows into software that is more integrated, efficient, and ready to scale.",
+            "btn-consult": "Discuss Your Requirements",
+            "btn-services": "Explore Our Services",
+            "note": "Built around your business needs and workflows",
+            "message": "Hello Saskardigital, I would like to consult about software solutions for my business. I would like to explore the most suitable solution based on our business needs and processes. Please share more information about the consultation process and project estimation. Thank you."
+        },
+        "intro": {
+            "label": "MORE THAN JUST BUILDING SOFTWARE",
+            "title": "We build systems that help",
+            "title-highlight": "businesses work better.",
+            "description": "Good software isn't about having the most features. What matters more is how the system helps your business work faster, reduce unnecessary tasks, and access the information needed to make better decisions."
+        },
+        "problems": {
+            "label": "ARE YOU EXPERIENCING THESE CHALLENGES?",
+            "title": "As your business grows,",
+            "title-highlight": "the way you work needs to evolve.",
+            "description": "Many businesses begin facing operational challenges as customers, transactions, and teams grow while their existing workflows remain unchanged.",
+            "items": {
+                "manual": {
+                    "title": "Too Many Manual Processes",
+                    "description": "Tasks that could be handled by a system still depend on Excel, spreadsheets, or manual record-keeping."
+                },
+                "scattered-data": {
+                    "title": "Scattered Data",
+                    "description": "Business information is stored across different places, making it harder to find, monitor, and manage."
+                },
+                "monitoring": {
+                    "title": "Difficult to Monitor",
+                    "description": "Business owners spend more time trying to understand operational conditions and make informed decisions."
+                },
+                "workflow": {
+                    "title": "Inefficient Workflows",
+                    "description": "Teams repeatedly perform the same tasks because they do not yet have a system that properly supports their business processes."
+                }
+            }
+        },
+        "why-software": {
+            "number-label": "FROM MANUAL TO DIGITAL",
+            "title": "Don't let",
+            "title-highlight": "business growth ",
+            "title-ending": "make your operations more complicated.",
+            "description-1": "When a business is still small, spreadsheets, chats, and manual processes may seem sufficient. But as the business grows, these methods can make operations increasingly difficult to control.",
+            "description-2": "With the right system, business processes can become more structured. Data can be centralized, work can be monitored, and teams can follow more consistent workflows.",
+            "highlight-title": "Software isn't only for large companies.",
+            "highlight-description": "The right system can help growing businesses operate with greater clarity and direction."
+        },
+        "services": {
+            "label": "WHAT CAN WE BUILD?",
+            "title": "One partner for your ",
+            "title-highlight": "business software needs.",
+            "description": "We don't limit our solutions to one type of application. Every system is developed around your business needs, processes, and goals.",
+            "items": {
+                "web-application": {
+                    "title": "Web Application",
+                    "description": "Web-based applications that help businesses manage processes, data, transactions, and operations more efficiently."
+                },
+                "mobile-application": {
+                    "title": "Mobile Application",
+                    "description": "Mobile applications that make it easier for your team and customers to access business services and information."
+                },
+                "business-system": {
+                    "title": "Business System",
+                    "description": "Systems designed around your business workflows to reduce manual work and improve operational efficiency."
+                },
+                "crm": {
+                    "title": "CRM",
+                    "description": "Manage leads, customers, follow-ups, campaigns, and sales activities in one integrated system."
+                },
+                "hris": {
+                    "title": "HRIS",
+                    "description": "Systems that help manage employee data, attendance, recruitment, and HR administration."
+                },
+                "custom-software": {
+                    "title": "Custom Software",
+                    "description": "Software with features and workflows built specifically around your business needs and processes."
+                }
+            }
+        },
+        "custom": {
+            "label": "WHY CUSTOM SOFTWARE?",
+            "title": "Because every business",
+            "title-highlight": "works differently.",
+            "description-1": "Off-the-shelf software can be a great solution for certain needs. However, not every business process can be forced to fit the way a particular application works.",
+            "description-2": "With custom software, the system is designed around your business processes — not the other way around.",
+            "button": "Discuss Your Requirements",
+            "items": {
+                "features": {
+                    "title": "Features That Fit Your Needs",
+                    "description": "Build only the features your business actually needs."
+                },
+                "workflow": {
+                    "title": "Workflows Built Around Your Business",
+                    "description": "The system is designed around the processes your team already follows."
+                },
+                "developable": {
+                    "title": "Built to Evolve",
+                    "description": "The software can continue to evolve as your business needs change."
+                },
+                "controlled-data": {
+                    "title": "Better Data Control",
+                    "description": "Business information can be managed and monitored through one system."
+                }
+            }
+        },
+        "process": {
+            "label": "HOW WE WORK",
+            "title": "From business challenges to",
+            "title-highlight": "digital solutions.",
+            "description": "We start by understanding your business rather than jumping straight into code and technology.",
+            "steps": {
+                "understand": {
+                    "number": "01",
+                    "title": "Understand",
+                    "description": "We understand your business needs, challenges, and processes."
+                },
+                "plan": {
+                    "number": "02",
+                    "title": "Plan",
+                    "description": "We define the solution, features, system structure, and user flow."
+                },
+                "build": {
+                    "number": "03",
+                    "title": "Build",
+                    "description": "The system is developed using a structured approach based on the agreed requirements."
+                },
+                "test": {
+                    "number": "04",
+                    "title": "Test",
+                    "description": "We test the system to ensure everything works according to the agreed requirements."
+                },
+                "deliver": {
+                    "number": "05",
+                    "title": "Deliver",
+                    "description": "The system is prepared and delivered so your team can start using it effectively."
+                },
+                "support": {
+                    "number": "06",
+                    "title": "Support",
+                    "description": "We remain available to support you after the system has been delivered."
+                }
+            }
+        },
+        "benefits": {
+            "label": "WHAT WE AIM TO DELIVER",
+            "title": "It's not just about",
+            "title-highlight": "finishing the software.",
+            "description": "The ultimate goal is to help your business build better workflows and have a system that can continue to evolve.",
+            "items": {
+                "structured": {
+                    "number": "01",
+                    "title": "More Structured Processes",
+                    "description": "Business workflows become clearer, more measurable, and easier for your team to follow."
+                },
+                "centralized": {
+                    "number": "02",
+                    "title": "Centralized Data",
+                    "description": "Important business information can be managed in one system, making it easier to access and monitor."
+                },
+                "manual": {
+                    "number": "03",
+                    "title": "Less Manual Work",
+                    "description": "Repetitive tasks can be supported by the system, allowing your team to focus on higher-value work."
+                },
+                "growth": {
+                    "number": "04",
+                    "title": "Supports Business Growth",
+                    "description": "The system can evolve alongside your business as your company grows."
+                }
+            }
+        },
+        "portfolio": {
+            "label": "EXAMPLE SOLUTIONS",
+            "title": "Software that can be tailored",
+            "title-highlight": "to your business needs."
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Frequently",
+            "title-highlight": "asked questions.",
+            "questions": [
+                {
+                    "question": "Can software be built around our business needs?",
+                    "answer": "Yes. Custom software is developed around your business needs, processes, and existing workflows."
+                },
+                {
+                    "question": "Can Saskardigital develop mobile applications?",
+                    "answer": "Yes. We can develop mobile applications as part of a broader digital solution for your business."
+                },
+                {
+                    "question": "Can you develop a CRM or HRIS?",
+                    "answer": "Yes. CRM, HRIS, internal dashboards, business management systems, and other operational applications can be developed around your requirements."
+                },
+                {
+                    "question": "Can the software be expanded in the future?",
+                    "answer": "Yes. We can design the system with a structure that allows additional features and future development."
+                },
+                {
+                    "question": "How do I start a custom software project?",
+                    "answer": "You can contact us first to discuss your challenges, business processes, and system requirements. We will then help define the right solution for your business."
+                }
+            ]
+        },
+        "cta": {
+            "label": "READY TO GET STARTED?",
+            "title": "Have a business process you'd like to",
+            "title-highlight": "make simpler?",
+            "description": "Tell us about your business needs and challenges. Let's explore how the right digital solution can help your business operate more effectively.",
+            "button": "Discuss Your Project",
+            "note": "You don't need to have technical specifications ready. We'll start with your business needs."
+        }
+    },
+    "client-experience": {
+        "eyebrow": "CLIENT EXPERIENCE",
+        "hero-title": "Your experience",
+        "hero-title-highlight": "matters to us.",
+        "hero-description": "We'd love to hear about your experience working with Saskardigital. Your feedback helps us improve, grow, and build better digital solutions.",
+        "form-label": "YOUR FEEDBACK",
+        "form-title": "Tell us about your",
+        "form-title-highlight": "experience.",
+        "form-description": "Your experience matters. Tell us how Saskardigital has supported your business and what you think about the solution we've built together.",
+        "feedback": {
+            "label": "CLIENT FEEDBACK",
+            "number": "01",
+            "description": "We'd appreciate your honest experience."
+        },
+        "fields": {
+            "name": {
+                "label": "Your Name",
+                "placeholder": "Enter your name"
+            },
+            "position": {
+                "label": "Position / Role",
+                "placeholder": "e.g. Director, Manager, Owner"
+            },
+            "message": {
+                "label": "Your Experience",
+                "hint": "Tell us what you think",
+                "placeholder": "Share your experience working with Saskardigital..."
+            }
+        },
+        "privacy-note": "Your feedback will be reviewed before being published.",
+        "button": "Submit Experience",
+        "button-loading": "Submitting...",
+        "trust": {
+            "label": "THANK YOU",
+            "title": "Every experience",
+            "title-highlight": "helps us become better.",
+            "description": "Thank you for trusting Saskardigital and allowing us to be part of your digital journey."
+        },
+        "success": {
+            "title": "Thank You for Sharing.",
+            "description": "We truly appreciate your time and feedback. Your experience has been successfully submitted."
+        },
+        "error": {
+            "title": "Something Went Wrong.",
+            "description": "We couldn't submit your experience right now. Please try again."
+        }
+    }
+}

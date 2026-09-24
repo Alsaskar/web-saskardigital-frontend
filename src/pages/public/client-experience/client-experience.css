@@ -1,0 +1,631 @@
+.client-experience-page {
+    background: #f8fafc;
+    color: #101828;
+    overflow: hidden;
+}
+
+.client-experience-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.client-experience-hero {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #ffffff;
+    background: linear-gradient(
+        125deg,
+        #063b69 0%,
+        #0b609e 42%,
+        #1492fa 100%
+    );
+}
+
+.client-experience-hero-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.16;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.18) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.18) 1px,
+            transparent 1px
+        );
+    background-size: 70px 70px;
+    mask-image: linear-gradient(
+        to bottom,
+        black 0%,
+        transparent 90%
+    );
+}
+
+.client-experience-hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(5px);
+}
+
+.client-experience-hero-glow-one {
+    width: 520px;
+    height: 520px;
+    right: -170px;
+    top: -160px;
+    background: rgba(255,255,255,0.12);
+}
+
+.client-experience-hero-glow-two {
+    width: 420px;
+    height: 420px;
+    left: -220px;
+    bottom: -240px;
+    background: rgba(0,35,85,0.3);
+}
+
+.client-experience-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 100px 0 110px;
+}
+
+.client-experience-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 15px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.client-experience-hero-badge span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 14px rgba(255,255,255,0.8);
+}
+
+.client-experience-hero h1 {
+    margin: 0;
+    max-width: 900px;
+    font-size: clamp(58px, 8vw, 100px);
+    line-height: 0.96;
+    letter-spacing: -0.065em;
+    font-weight: 700;
+}
+
+.client-experience-hero h1 span {
+    color: rgba(255,255,255,0.65);
+}
+
+.client-experience-hero-content p {
+    max-width: 620px;
+    margin: 35px 0 0;
+    color: rgba(255,255,255,0.78);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.client-experience-hero-scroll {
+    position: absolute;
+    right: 42px;
+    bottom: 45px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transform: rotate(90deg);
+    transform-origin: right center;
+    color: rgba(255,255,255,0.55);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.client-experience-hero-scroll span:last-child {
+    width: 45px;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+}
+
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.client-experience-section {
+    padding: 120px 0 135px;
+    background: #f8fafc;
+}
+
+.client-experience-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.client-experience-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    color: #1d7fd0;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.client-experience-section-label::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    border-radius: 10px;
+    background: #1d7fd0;
+}
+
+.client-experience-heading h2 {
+    margin: 0;
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1;
+    letter-spacing: -0.055em;
+}
+
+.client-experience-heading h2 span {
+    color: #98a2b3;
+}
+
+.client-experience-heading-description {
+    max-width: 390px;
+    padding-bottom: 4px;
+}
+
+.client-experience-heading-description p {
+    margin: 0;
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =========================
+   FORM WRAPPER
+========================= */
+
+.client-experience-form-wrapper {
+    padding: 42px;
+    border: 1px solid #e4e7ec;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 18px 55px rgba(16,24,40,0.07);
+}
+
+.client-experience-form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.client-experience-form-top > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.client-experience-form-top span {
+    color: #667085;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.client-experience-form-top strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: #eff8ff;
+    color: #1d7fd0;
+    font-size: 11px;
+}
+
+.client-experience-form-top p {
+    margin: 0;
+    color: #98a2b3;
+    font-size: 11px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.client-experience-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.client-experience-field {
+    margin-bottom: 28px;
+}
+
+.client-experience-field label {
+    display: block;
+    margin-bottom: 10px;
+    color: #101828;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.client-experience-field input,
+.client-experience-field textarea {
+    width: 100%;
+    padding: 15px 17px;
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+    outline: none;
+    background: #ffffff;
+    color: #101828;
+    font-family: inherit;
+    font-size: 13px;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.client-experience-field input {
+    height: 50px;
+}
+
+.client-experience-field textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.client-experience-field input::placeholder,
+.client-experience-field textarea::placeholder {
+    color: #98a2b3;
+}
+
+.client-experience-field input:hover,
+.client-experience-field textarea:hover {
+    border-color: #98a2b3;
+}
+
+.client-experience-field input:focus,
+.client-experience-field textarea:focus {
+    border-color: #1d7fd0;
+    background: #fcfdff;
+    box-shadow: 0 0 0 4px rgba(29,127,208,0.08);
+}
+
+.client-experience-message-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-experience-message-label span {
+    color: #98a2b3;
+    font-size: 10px;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.client-experience-submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+.client-experience-submit-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #98a2b3;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.client-experience-submit-note span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 6px;
+    border-radius: 50%;
+    background: #1d7fd0;
+}
+
+.client-experience-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-width: 230px;
+    padding: 7px 8px 7px 20px;
+    border: 0;
+    border-radius: 100px;
+    background: #101828;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.client-experience-submit strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1d7fd0;
+    font-size: 16px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+
+.client-experience-submit:hover {
+    background: #063b69;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(6,59,105,0.18);
+}
+
+.client-experience-submit:hover strong {
+    transform: rotate(45deg);
+}
+
+
+/* =========================
+   THANK YOU
+========================= */
+
+.client-experience-trust {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 135px;
+    color: #ffffff;
+    background: linear-gradient(
+        125deg,
+        #063b69 0%,
+        #0b609e 42%,
+        #1492fa 100%
+    );
+}
+
+.client-experience-trust::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.1;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.2) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.2) 1px,
+            transparent 1px
+        );
+    background-size: 70px 70px;
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+.client-experience-trust-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.client-experience-trust-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 23px;
+    color: rgba(255,255,255,0.65);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.client-experience-trust-label span {
+    width: 28px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.65);
+}
+
+.client-experience-trust h2 {
+    margin: 0;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+}
+
+.client-experience-trust h2 span {
+    color: rgba(255,255,255,0.62);
+}
+
+.client-experience-trust p {
+    max-width: 560px;
+    margin: 30px 0 0;
+    color: rgba(255,255,255,0.72);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .client-experience-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .client-experience-heading-description {
+        max-width: 600px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .client-experience-container {
+        width: min(100% - 30px, 1180px);
+    }
+
+    .client-experience-hero {
+        min-height: 650px;
+    }
+
+    .client-experience-hero-content {
+        padding-top: 50px;
+    }
+
+    .client-experience-hero h1 {
+        font-size: clamp(52px, 14vw, 75px);
+    }
+
+    .client-experience-hero-content p {
+        margin-top: 28px;
+        font-size: 15px;
+    }
+
+    .client-experience-hero-scroll {
+        display: none;
+    }
+
+    .client-experience-section {
+        padding: 90px 0 100px;
+    }
+
+    .client-experience-heading {
+        margin-bottom: 45px;
+    }
+
+    .client-experience-heading h2 {
+        font-size: 43px;
+    }
+
+    .client-experience-form-wrapper {
+        padding: 28px 22px;
+        border-radius: 18px;
+    }
+
+    .client-experience-form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .client-experience-form-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .client-experience-submit-wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .client-experience-submit {
+        width: 100%;
+    }
+
+    .client-experience-trust {
+        padding: 95px 0 105px;
+    }
+
+    .client-experience-trust h2 {
+        font-size: 52px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .client-experience-hero {
+        min-height: 620px;
+    }
+
+    .client-experience-hero h1 {
+        font-size: 49px;
+    }
+
+    .client-experience-heading h2 {
+        font-size: 37px;
+    }
+
+    .client-experience-trust h2 {
+        font-size: 43px;
+    }
+
+    .client-experience-form-top > div {
+        gap: 12px;
+    }
+
+}
+
+.client-experience-field input.is-error,
+.client-experience-field textarea.is-error {
+    border-color: #dc3545;
+}
+
+.client-experience-field-error {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #dc3545;
+}
+
+.client-experience-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
