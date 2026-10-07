@@ -1,11 +1,12 @@
 import { useState } from "react"
 import {
-  createLeadsService,
-  deleteLeadsService,
-  editLeadsService,
-  getDetailLeadsService,
-  getLeadsService,
-  updateStatusLeadsService
+    createLeadsService,
+    deleteLeadsService,
+    editLeadsService,
+    getDetailLeadsService,
+    getLeadsService,
+    importLeadsService,
+    updateStatusLeadsService
 } from "../services/LeadsService"
 
 export const useLeads = () => {
@@ -116,6 +117,23 @@ export const useLeads = () => {
         }
     }
 
+    const importLeads = async (formData) => {
+        setLoading(true);
+
+        try {
+            const res = await importLeadsService(formData);
+
+            return {
+                success: res.data.success,
+                message: res.data.message,
+            };
+        } catch (error) {
+            throw error;
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return {
         addLeads,
         fetchLeads,
@@ -123,6 +141,7 @@ export const useLeads = () => {
         updateStatusLeads,
         editLeads,
         removeLeads,
+        importLeads,
         loading
     }
 }

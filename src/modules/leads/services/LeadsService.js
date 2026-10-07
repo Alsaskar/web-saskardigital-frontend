@@ -25,3 +25,11 @@ export const editLeadsService = (id, data) => {
 export const deleteLeadsService = (id) => {
   return axiosInstance.delete(`/leads/${id}`);
 };
+
+export const importLeadsService = async (formData) => {
+  return await axiosInstance.post('/leads/import', formData, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+};

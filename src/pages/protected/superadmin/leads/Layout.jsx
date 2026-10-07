@@ -6,6 +6,7 @@ import LeadsTable from "@/modules/leads/components/LeadsTable";
 import { useLeads } from "@/modules/leads/hooks/useLeads";
 import { useEffect, useState } from "react";
 import ModalUpdateStatusLeads from "../../../../modules/leads/components/ModalUpdateStatus";
+import ModalImportLeads from "../../../../modules/leads/components/ModalImport";
 
 const Layout = () => {
     const { fetchLeads } = useLeads()
@@ -47,6 +48,10 @@ const Layout = () => {
         setShowModalUpdateStatus(true)
     }
     const _handleCloseModalUpdateStatus = () => setShowModalUpdateStatus(false)
+
+    const [showModalImport, setShowModalImport] = useState(false);
+    const _handleShowModalImport = () => setShowModalImport(true);
+    const _handleCloseModalImport = () => setShowModalImport(false);
 
     const _fetchData = async () => {
         const res = await fetchLeads(page, search, status, category);
@@ -95,6 +100,12 @@ const Layout = () => {
                 onSuccess={_fetchData}
             />
 
+            <ModalImportLeads 
+                show={showModalImport}
+                handleClose={_handleCloseModalImport}
+                onSuccess={_fetchData}
+            />
+
             <div className="card">
                 <div className="card-body">
                     <h4>Kelola Leads</h4>
@@ -107,6 +118,14 @@ const Layout = () => {
                                 onClick={_handleShowModalAdd}
                             >
                                 Tambah Leads Baru
+                            </button>
+                        </div>
+                        <div className="col-md-2">
+                            <button
+                                className="btn btn-success btn-sm w-100"
+                                onClick={_handleShowModalImport}
+                            >
+                                Import Leads
                             </button>
                         </div>
                     </div>
