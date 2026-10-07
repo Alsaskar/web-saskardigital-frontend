@@ -10,6 +10,14 @@ const OurClientSection = () => {
 
     const [clients, setClients] = useState([])
 
+    const getClientLogoUrl = (logo) => {
+        if (!logo) {
+            return '/saskardigital.ico'
+        }
+
+        return `${import.meta.env.VITE_BACKEND_BASE_URL}/assets/images/client/${logo}`
+    }
+
     const _fetchData = async () => {
         const res = await fetchClientAll(9)
 
@@ -50,7 +58,7 @@ const OurClientSection = () => {
             <div className="client-card">
                 <div className="client-logo">
                     <img
-                        src={client.logo_company || '/saskardigital.ico'}
+                        src={getClientLogoUrl(client.logo_company)}
                         alt={
                             client.logo_company
                                 ? client.nama_company
