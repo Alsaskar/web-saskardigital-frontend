@@ -1,32 +1,84 @@
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
 import AOS from "aos";
-import '../../../styles/client-feedback.css';
+import "../../../styles/client-feedback.css";
 import { useTranslation } from "react-i18next";
-import { useTestimoni } from '../../testimoni/hooks/useTestimoni'
+import { useTestimoni } from "../../testimoni/hooks/useTestimoni";
 
 const ClientFeedbackSection = () => {
     const { t } = useTranslation();
 
-    const { fetchTestimoniAll } = useTestimoni()
+    const { fetchTestimoniAll } = useTestimoni();
 
-    const [testimoni, setTestimoni] = useState([])
+    const [testimoni, setTestimoni] = useState([]);
 
     const _fetchData = async () => {
-        const res = await fetchTestimoniAll(4);
+        const res = await fetchTestimoniAll(8);
 
         if (res) {
-            setTestimoni(res.data);
+            setTestimoni(res.data || []);
         }
     };
 
     useEffect(() => {
-        _fetchData()
-    }, [])
+        _fetchData();
+    }, []);
 
     useEffect(() => {
         AOS.refresh();
     }, []);
+
+    // Desktop: 2 card per slide
+    const desktopSlides = [];
+
+    for (let i = 0; i < testimoni.length; i += 2) {
+        desktopSlides.push(testimoni.slice(i, i + 2));
+    }
+
+    // Mobile: 1 card per slide
+    const mobileSlides = testimoni.map((feedback) => [feedback]);
+
+    const renderFeedbackCard = (feedback) => (
+        <div
+            className="col-lg-6 col-md-6 col-12"
+            key={feedback.id}
+        >
+            <div className="feedback-card">
+
+                <div className="feedback-card-top">
+                    <div className="feedback-stars">
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                        <i className="bi bi-star-fill"></i>
+                    </div>
+                </div>
+
+                <div className="feedback-message">
+                    <p>
+                        "{feedback.message}"
+                    </p>
+                </div>
+
+                <div className="feedback-client">
+                    <div className="feedback-avatar">
+                        {feedback.nama_pic?.charAt(0)}
+                    </div>
+
+                    <div>
+                        <h4>{feedback.nama_pic}</h4>
+
+                        <span>
+                            {feedback.jabatan} ·{" "}
+                            {feedback.client?.nama_company}
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
 
     return (
         <section id="client-feedback">
@@ -38,8 +90,13 @@ const ClientFeedbackSection = () => {
                         data-aos="fade-right"
                         data-aos-duration="900"
                     >
-                        <h5>{t('client-feedback.eyebrow')}</h5>
-                        <h1>{t('client-feedback.title')}</h1>
+                        <h5>
+                            {t("client-feedback.eyebrow")}
+                        </h5>
+
+                        <h1>
+                            {t("client-feedback.title")}
+                        </h1>
                     </div>
 
                     <div
@@ -53,75 +110,63 @@ const ClientFeedbackSection = () => {
                         </span>
 
                         <p>
-                            {t('client-feedback.description')}
+                            {t("client-feedback.description")}
                         </p>
                     </div>
 
                 </div>
 
-                <div className="feedback-carousel-wrapper">
-                    <Carousel
-                        indicators={false}
-                        controls={true}
-                        interval={5000}
-                        className="feedback-carousel"
-                    >
-                        {[0, 2, 4, 6].map((startIndex) => (
-                            <Carousel.Item key={startIndex}>
-                                <div className="row g-4">
-
-                                    {testimoni
-                                        .slice(startIndex, startIndex + 2)
-                                        .map((feedback) => (
-                                            <div
-                                                className="col-lg-6 col-md-6 col-12"
-                                                key={feedback.id}
-                                            >
-                                                <div className="feedback-card">
-
-                                                    <div className="feedback-card-top">
-                                                        <div className="feedback-stars">
-                                                            <i className="bi bi-star-fill"></i>
-                                                            <i className="bi bi-star-fill"></i>
-                                                            <i className="bi bi-star-fill"></i>
-                                                            <i className="bi bi-star-fill"></i>
-                                                            <i className="bi bi-star-fill"></i>
-                                                        </div>
-
-                                                        <span className="feedback-number">
-                                                            0{startIndex + 1}
-                                                        </span>
-                                                    </div>
-
-                                                    <div className="feedback-message">
-                                                        <p>
-                                                            "{feedback.message}"
-                                                        </p>
-                                                    </div>
-
-                                                    <div className="feedback-client">
-                                                        <div className="feedback-avatar">
-                                                            {feedback.nama_pic.charAt(0)}
-                                                        </div>
-
-                                                        <div>
-                                                            <h4>{feedback.nama_pic}</h4>
-
-                                                            <span>
-                                                                {feedback.jabatan} · {feedback.client.nama_company}
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        ))}
-
+                {testimoni.length > 0 && (
+                    <>
+                        {/* Desktop */}
+                        <div className="feedback-desktop">
+                            {testimoni.length <= 2 ? (
+                                <div className="feedback-static">
+                                    <div className="row g-4">
+                                        {testimoni.map(renderFeedbackCard)}
+                                    </div>
                                 </div>
-                            </Carousel.Item>
-                        ))}
-                    </Carousel>
-                </div>
+                            ) : (
+                                <div className="feedback-carousel-wrapper">
+                                    <Carousel
+                                        indicators={false}
+                                        controls={true}
+                                        interval={5000}
+                                        className="feedback-carousel"
+                                    >
+                                        {desktopSlides.map((slide, index) => (
+                                            <Carousel.Item key={index}>
+                                                <div className="row g-4">
+                                                    {slide.map(renderFeedbackCard)}
+                                                </div>
+                                            </Carousel.Item>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Mobile */}
+                        <div className="feedback-mobile">
+                            <div className="feedback-carousel-wrapper">
+                                <Carousel
+                                    indicators={false}
+                                    controls={true}
+                                    interval={5000}
+                                    className="feedback-carousel"
+                                >
+                                    {mobileSlides.map((slide, index) => (
+                                        <Carousel.Item key={index}>
+                                            <div className="row g-4">
+                                                {slide.map(renderFeedbackCard)}
+                                            </div>
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </div>
+                        </div>
+                    </>
+                )}
 
                 <div
                     className="feedback-bottom"
@@ -130,13 +175,13 @@ const ClientFeedbackSection = () => {
                     data-aos-delay="300"
                 >
                     <span>
-                        {t('client-feedback.bottom-label')}
+                        {t("client-feedback.bottom-label")}
                     </span>
 
                     <div className="feedback-bottom-line"></div>
 
                     <span>
-                        {t('client-feedback.bottom-caption')}
+                        {t("client-feedback.bottom-caption")}
                     </span>
                 </div>
 

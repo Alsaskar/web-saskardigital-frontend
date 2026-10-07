@@ -1,14 +1,39 @@
 import { Accordion, Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "./software-custom.css";
 import FooterSection from "../../../../modules/homepage/components/FooterSection";
 import NavbarPublic from "../../../../components/NavbarPublic";
+import { usePortfolio } from "../../../../modules/portfolio/hooks/usePortfolio";
 
 const Layout = () => {
     const { t } = useTranslation();
+
+    const getImageUrl = (thumbnail) => {
+        if (!thumbnail) {
+            return "/images/placeholder.jpg";
+        }
+
+        return `${import.meta.env.VITE_BACKEND_BASE_URL}/assets/images/portfolio/${thumbnail}`;
+    };
+
+    // get portfolio
+    const { fetchPortfolioByCategory } = usePortfolio()
+    const [portfolio, setPortfolio] = useState([])
+
+    const _fetchData = async () => {
+        const res = await fetchPortfolioByCategory('software custom')
+
+        if (res) {
+            setPortfolio(res.data)
+        }
+    }
+
+    useEffect(() => {
+        _fetchData()
+    }, [])
 
     useEffect(() => {
         AOS.init({
@@ -127,24 +152,6 @@ const Layout = () => {
             number: t("software-custom.process.steps.support.number"),
             title: t("software-custom.process.steps.support.title"),
             description: t("software-custom.process.steps.support.description")
-        }
-    ];
-
-    const portfolios = [
-        {
-            category: "Business System",
-            title: "Business Management System",
-            description: "Sistem untuk membantu bisnis mengelola operasional dan data secara terpusat."
-        },
-        {
-            category: "CRM",
-            title: "Customer Relationship Management",
-            description: "Sistem untuk mengelola customer, leads, follow-up, dan aktivitas sales."
-        },
-        {
-            category: "HRIS",
-            title: "Human Resource Information System",
-            description: "Sistem untuk membantu pengelolaan data dan proses administrasi karyawan."
         }
     ];
 
@@ -569,6 +576,7 @@ const Layout = () => {
                         </Container>
                     </section>
 
+                    {/* List Portfolio */}
                     <section className="sc-portfolio">
                         <Container>
                             <div className="sc-section-heading" data-aos="fade-up">
@@ -578,29 +586,77 @@ const Layout = () => {
 
                                 <h2>
                                     {t("software-custom.portfolio.title")}
-                                    <span> {t("software-custom.portfolio.title-highlight")}</span>
+                                    <span>
+                                        {" "}
+                                        {t("software-custom.portfolio.title-highlight")}
+                                    </span>
                                 </h2>
                             </div>
 
                             <Row className="g-4">
-                                {portfolios.map((item, index) => (
-                                    <Col md={6} lg={4} key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-                                        <div className="sc-portfolio-card">
+                                {portfolio.map((item, index) => (
+                                    <Col
+                                        md={6}
+                                        lg={4}
+                                        key={item.id}
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 100}
+                                    >
+                                        <article className="sc-portfolio-card">
                                             <div className="sc-portfolio-image">
-                                                <div className="sc-mini-window">
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                    <div></div>
-                                                </div>
+                                                <img
+                                                    src={getImageUrl(item.thumbnail)}
+                                                    alt={item.title}
+                                                    loading="lazy"
+                                                />
+
+                                                <div className="sc-portfolio-image-overlay"></div>
+
+                                                <span className="sc-portfolio-number">
+                                                    {String(index + 1).padStart(2, "0")}
+                                                </span>
+
+                                                <a
+                                                    href={item.website_url}
+                                                    target="_blank"
+                                                    title="View Portfolio"
+                                                >
+                                                    <span className="sc-portfolio-view">
+                                                        <i className="bi bi-arrow-up-right"></i>
+                                                    </span>
+                                                </a>
+
+
                                             </div>
 
                                             <div className="sc-portfolio-content">
-                                                <small>{item.category}</small>
+                                                <div className="sc-portfolio-category">
+                                                    <span></span>
+                                                    {item.category}
+                                                </div>
+
                                                 <h3>{item.title}</h3>
+
                                                 <p>{item.description}</p>
+
+                                                <div className="sc-portfolio-footer">
+                                                    <span>{item.sub_title}</span>
+
+                                                    <a
+                                                        href={item.website_url}
+                                                        target="_blank"
+                                                        title="View Portfolio"
+                                                        style={{
+                                                            textDecoration: 'none'
+                                                        }}
+                                                    >
+                                                        <i className="bi bi-arrow-right"></i>
+                                                    </a>
+
+                                                    
+                                                </div>
                                             </div>
-                                        </div>
+                                        </article>
                                     </Col>
                                 ))}
                             </Row>

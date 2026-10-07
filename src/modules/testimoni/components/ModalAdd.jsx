@@ -10,7 +10,10 @@ export const validationSchema = Yup.object({
     clientId: Yup.number().required('Client wajib diisi'),
     nama_pic: Yup.string().required('Nama Pic wajib diisi'),
     jabatan: Yup.string().required('Jabatan wajib diisi'),
-    message: Yup.string().required('Message wajib diisi'),
+    message: Yup.string()
+        .required('Testimoni wajib diisi')
+        .min(20, 'Testimoni minimal 20 karakter')
+        .max(300, 'Testimoni maksimal 300 karakter'),
     status: Yup.string().required('Status wajib diisi'),
 });
 
@@ -155,7 +158,7 @@ const ModalAddTestimoni = ({ show, handleClose = () => { }, onSuccess = () => { 
                                 </Form.Group>
 
                                 <Form.Group className="mt-3">
-                                    <Form.Label>Message</Form.Label>
+                                    <Form.Label>Testimoni</Form.Label>
                                     <Form.Control
                                         as="textarea"
                                         rows={4}

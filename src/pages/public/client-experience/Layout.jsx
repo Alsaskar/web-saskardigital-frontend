@@ -18,8 +18,9 @@ const validationSchema = Yup.object({
         .required("Jabatan wajib diisi"),
 
     message: Yup.string()
-        .required("Pengalaman wajib diisi")
-        .min(10, "Pengalaman minimal 10 karakter"),
+        .required('Testimoni wajib diisi')
+        .min(20, 'Testimoni minimal 20 karakter')
+        .max(300, 'Testimoni maksimal 300 karakter')
 });
 
 const Layout = () => {
@@ -222,7 +223,7 @@ const Layout = () => {
                                                     onChange={handleChange}
                                                     className={
                                                         touched.nama_pic &&
-                                                        errors.nama_pic
+                                                            errors.nama_pic
                                                             ? "is-error"
                                                             : ""
                                                     }
@@ -258,7 +259,7 @@ const Layout = () => {
                                                     onChange={handleChange}
                                                     className={
                                                         touched.jabatan &&
-                                                        errors.jabatan
+                                                            errors.jabatan
                                                             ? "is-error"
                                                             : ""
                                                     }
@@ -306,7 +307,7 @@ const Layout = () => {
                                                 onChange={handleChange}
                                                 className={
                                                     touched.message &&
-                                                    errors.message
+                                                        errors.message
                                                         ? "is-error"
                                                         : ""
                                                 }

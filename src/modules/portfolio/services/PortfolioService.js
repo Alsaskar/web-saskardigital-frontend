@@ -10,6 +10,12 @@ export const getPortfolioAllService = async (limit) => {
   });
 };
 
+export const getPortfolioByCategoryService = async (categoryService) => {
+  return await axiosInstance.get(`/portfolio/by-category-service`, {
+    params: { categoryService }
+  });
+};
+
 export const getPortfolioService = async (page, search) => {
   return await axiosInstance.get(`/portfolio`, {
     params: { page, search }

@@ -4,6 +4,7 @@ import {
   deletePortfolioService,
   editPortfolioService,
   getPortfolioAllService,
+  getPortfolioByCategoryService,
   getPortfolioService
 } from "../services/PortfolioService"
 
@@ -34,6 +35,19 @@ export const usePortfolio = () => {
     const fetchPortfolioAll = async (limit) => {
         try {
             const res = await getPortfolioAllService(limit);
+
+            return res.data;
+        } catch (err) {
+            console.log(err);
+
+            return null;
+        }
+    }
+
+    // By Category Service Portfolio
+    const fetchPortfolioByCategory = async (categoryService) => {
+        try {
+            const res = await getPortfolioByCategoryService(categoryService);
 
             return res.data;
         } catch (err) {
@@ -99,6 +113,7 @@ export const usePortfolio = () => {
         addPortfolio,
         fetchPortfolio,
         fetchPortfolioAll,
+        fetchPortfolioByCategory,
         editPortfolio,
         removePortfolio,
         loading

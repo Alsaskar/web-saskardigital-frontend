@@ -1,14 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 
 import NavbarPublic from "../../../../components/NavbarPublic";
 import FooterSection from "../../../../modules/homepage/components/FooterSection";
 import "./web-company-profile.css";
+import { usePortfolio } from "../../../../modules/portfolio/hooks/usePortfolio";
 
 const Layout = () => {
     const { t } = useTranslation();
     const whatsappNumber = "6281943206931";
+
+    const getImageUrl = (thumbnail) => {
+        if (!thumbnail) {
+            return "/images/placeholder.jpg";
+        }
+
+        return `${import.meta.env.VITE_BACKEND_BASE_URL}/assets/images/portfolio/${thumbnail}`;
+    };
+
+    // get portfolio
+    const { fetchPortfolioByCategory } = usePortfolio()
+    const [portfolio, setPortfolio] = useState([])
+
+    const _fetchData = async () => {
+        const res = await fetchPortfolioByCategory('web company profile')
+
+        if (res) {
+            console.log(res.data)
+            setPortfolio(res.data)
+        }
+    }
+
+    useEffect(() => {
+        _fetchData()
+    }, [])
 
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
@@ -568,188 +594,73 @@ const Layout = () => {
                             </div>
 
                             <div className="cp-portfolio-grid">
-                                {/* Portfolio cards tetap seperti sebelumnya */}
-                                <article
-                                    className="cp-portfolio-card"
-                                    data-aos="fade-up"
-                                    data-aos-delay="0"
-                                >
-                                    <div className="cp-portfolio-image">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
-                                            alt="Website PT Bawika Adhikari Servindo"
-                                            loading="lazy"
-                                        />
 
-                                        <div className="cp-portfolio-overlay">
-                                            <span>
-                                                {t("web-company-profile.portfolio.view-project")}
-                                            </span>
+                                {portfolio.map((data, index) => {
+                                    return (
+                                        <article
+                                            className="cp-portfolio-card"
+                                            data-aos="fade-up"
+                                            data-aos-delay="100"
+                                            key={index}
+                                        >
+                                            <div className="cp-portfolio-image">
+                                                <img
+                                                    src={getImageUrl(data?.thumbnail)}
+                                                    alt={data.title}
+                                                    loading="lazy"
+                                                />
 
-                                            <a
-                                                href="#link-portfolio"
-                                                className="cp-portfolio-arrow"
-                                                aria-label="View project"
-                                            >
-                                                <i className="bi bi-arrow-up-right"></i>
-                                            </a>
-                                        </div>
+                                                <div className="cp-portfolio-overlay">
+                                                    <span>
+                                                        {t("web-company-profile.portfolio.view-project")}
+                                                    </span>
 
-                                        <div className="cp-portfolio-tag">
-                                            COMPANY PROFILE
-                                        </div>
-                                    </div>
+                                                    <a
+                                                        href={data.website_url}
+                                                        className="cp-portfolio-arrow"
+                                                        aria-label="View project"
+                                                        target="_blank"
+                                                    >
+                                                        <i className="bi bi-arrow-up-right"></i>
+                                                    </a>
+                                                </div>
 
-                                    <div className="cp-portfolio-info">
-                                        <div className="cp-portfolio-heading">
-                                            <span className="cp-portfolio-category">
-                                                CATERING & MINING SERVICES
-                                            </span>
+                                                <div className="cp-portfolio-tag">
+                                                    {data.category_service?.toUpperCase()}
+                                                </div>
+                                            </div>
 
-                                            <h3>
-                                                PT Bawika Adhikari Servindo
-                                            </h3>
+                                            <div className="cp-portfolio-info">
+                                                <div className="cp-portfolio-heading">
+                                                    <span className="cp-portfolio-category">
+                                                        {data.sub_title}
+                                                    </span>
 
-                                            <p>
-                                                Website company profile untuk
-                                                memperkuat identitas dan digital
-                                                presence perusahaan.
-                                            </p>
-                                        </div>
+                                                    <h3>
+                                                        {data.title}
+                                                    </h3>
 
-                                        <div className="cp-portfolio-meta">
-                                            <span>
-                                                <i className="bi bi-grid"></i>
-                                                Company Profile
-                                            </span>
+                                                    <p>
+                                                        {data.description}
+                                                    </p>
+                                                </div>
 
-                                            <span>
-                                                <i className="bi bi-phone"></i>
-                                                Responsive
-                                            </span>
-                                        </div>
-                                    </div>
-                                </article>
+                                                <div className="cp-portfolio-meta">
+                                                    <span>
+                                                        <i className="bi bi-grid"></i>
+                                                        {data.project_type}
+                                                    </span>
 
-                                <article
-                                    className="cp-portfolio-card"
-                                    data-aos="fade-up"
-                                    data-aos-delay="150"
-                                >
-                                    <div className="cp-portfolio-image">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=85"
-                                            alt="BreathPilates website"
-                                            loading="lazy"
-                                        />
+                                                    <span>
+                                                        <i className="bi bi-phone"></i>
+                                                        Responsive
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    )
+                                })}
 
-                                        <div className="cp-portfolio-overlay">
-                                            <span>
-                                                {t("web-company-profile.portfolio.view-project")}
-                                            </span>
-
-                                            <a
-                                                href="#link-portfolio"
-                                                className="cp-portfolio-arrow"
-                                                aria-label="View project"
-                                            >
-                                                <i className="bi bi-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-
-                                        <div className="cp-portfolio-tag">
-                                            BUSINESS WEBSITE
-                                        </div>
-                                    </div>
-
-                                    <div className="cp-portfolio-info">
-                                        <div className="cp-portfolio-heading">
-                                            <span className="cp-portfolio-category">
-                                                PILATES & WELLNESS
-                                            </span>
-
-                                            <h3>BreathPilates</h3>
-
-                                            <p>
-                                                Digital presence untuk bisnis
-                                                wellness dengan tampilan yang
-                                                clean dan modern.
-                                            </p>
-                                        </div>
-
-                                        <div className="cp-portfolio-meta">
-                                            <span>
-                                                <i className="bi bi-globe2"></i>
-                                                Business Website
-                                            </span>
-
-                                            <span>
-                                                <i className="bi bi-phone"></i>
-                                                Responsive
-                                            </span>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article
-                                    className="cp-portfolio-card"
-                                    data-aos="fade-up"
-                                    data-aos-delay="300"
-                                >
-                                    <div className="cp-portfolio-image">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
-                                            alt="Damay Cerdas digital platform"
-                                            loading="lazy"
-                                        />
-
-                                        <div className="cp-portfolio-overlay">
-                                            <span>
-                                                {t("web-company-profile.portfolio.view-project")}
-                                            </span>
-
-                                            <a
-                                                href="#link-portfolio"
-                                                className="cp-portfolio-arrow"
-                                                aria-label="View project"
-                                            >
-                                                <i className="bi bi-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-
-                                        <div className="cp-portfolio-tag">
-                                            DIGITAL PLATFORM
-                                        </div>
-                                    </div>
-
-                                    <div className="cp-portfolio-info">
-                                        <div className="cp-portfolio-heading">
-                                            <span className="cp-portfolio-category">
-                                                EDUCATION & TRAINING
-                                            </span>
-
-                                            <h3>Damay Cerdas</h3>
-
-                                            <p>
-                                                Solusi digital untuk mendukung
-                                                aktivitas pembelajaran dan
-                                                pengelolaan bisnis.
-                                            </p>
-                                        </div>
-
-                                        <div className="cp-portfolio-meta">
-                                            <span>
-                                                <i className="bi bi-window-stack"></i>
-                                                Digital Platform
-                                            </span>
-
-                                            <span>
-                                                <i className="bi bi-code-slash"></i>
-                                                Custom Development
-                                            </span>
-                                        </div>
-                                    </div>
-                                </article>
                             </div>
 
                             <div

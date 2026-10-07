@@ -29,7 +29,7 @@
         "title": "Partner Digital untuk Membangun Bisnis yang Lebih Baik",
         "brand": "PT Saskardigital Solusi Indonesia",
         "description-1": "adalah perusahaan solusi digital yang membantu bisnis bertransformasi melalui teknologi — mulai dari software custom, aplikasi, hingga website yang dirancang sesuai kebutuhan spesifik setiap klien.",
-        "description-2": "WDengan tim profesional yang sudah berpengalaman selama 10+ tahun di industri teknologi, kami memahami bahwa setiap bisnis memiliki tantangan dan proses kerja yang berbeda. Karena itu, sebelum membangun solusi, kami selalu memulai dengan memahami alur bisnis, kebutuhan operasional, dan tujuan jangka panjang klien — agar sistem yang dibangun bukan sekadar 'jadi', tapi benar-benar relevan dan bisa digunakan secara maksimal.",
+        "description-2": "Dengan tim profesional yang sudah berpengalaman selama 10+ tahun di industri teknologi, kami memahami bahwa setiap bisnis memiliki tantangan dan proses kerja yang berbeda. Karena itu, sebelum membangun solusi, kami selalu memulai dengan memahami alur bisnis, kebutuhan operasional, dan tujuan jangka panjang klien — agar sistem yang dibangun bukan sekadar 'jadi', tapi benar-benar relevan dan bisa digunakan secara maksimal.",
         "principles": {
             "eyebrow": "PRINSIP KERJA KAMI",
             "title": "Bagaimana Kami Bekerja",
@@ -734,18 +734,18 @@
         }
     },
     "client-experience": {
-        "eyebrow": "PENGALAMAN CLIENT",
-        "hero-title": "Pengalaman Anda",
+        "eyebrow": "TESTIMONI KLIEN",
+        "hero-title": "Testimoni Anda",
         "hero-title-highlight": "Berarti Bagi Kami.",
-        "hero-description": "Kami ingin mendengar pengalaman Anda selama bekerja bersama Saskardigital. Masukan dari Anda membantu kami untuk terus berkembang dan membangun solusi digital yang lebih baik.",
-        "form-label": "MASUKAN ANDA",
+        "hero-description": "Kami ingin mendengar cerita Anda selama bekerjasama dengan Saskardigital. Testimoni dari Anda menjadi apresiasi bagi kami dan membantu calon klien mengenal kualitas layanan yang kami berikan.",
+        "form-label": "TESTIMONI ANDA",
         "form-title": "Ceritakan tentang",
-        "form-title-highlight": "pengalaman Anda.",
-        "form-description": "Pengalaman Anda berarti bagi kami. Ceritakan bagaimana Saskardigital membantu bisnis Anda dan apa pendapat Anda tentang solusi yang telah kita bangun bersama.",
+        "form-title-highlight": "kerjasama Anda.",
+        "form-description": "Bagikan kesan Anda selama bekerjasama dengan Saskardigital. Ceritakan bagaimana solusi yang kami bangun membantu bisnis Anda dan bagaimana pengalaman Anda bersama tim kami.",
         "feedback": {
-            "label": "MASUKAN CLIENT",
+            "label": "TESTIMONI KLIEN",
             "number": "01",
-            "description": "Kami menghargai pengalaman dan masukan jujur dari Anda."
+            "description": "Kami menghargai setiap cerita dan apresiasi dari klien yang telah mempercayai kami."
         },
         "fields": {
             "name": {
@@ -757,27 +757,27 @@
                 "placeholder": "Contoh: Direktur, Manager, Owner"
             },
             "message": {
-                "label": "Pengalaman Anda",
-                "hint": "Ceritakan pendapat Anda",
-                "placeholder": "Ceritakan pengalaman Anda selama bekerja bersama Saskardigital..."
+                "label": "Testimoni Anda",
+                "hint": "Bagikan kesan Anda",
+                "placeholder": "Ceritakan kesan Anda selama bekerjasama dengan Saskardigital..."
             }
         },
         "privacy-note": "Masukan Anda akan ditinjau terlebih dahulu sebelum ditampilkan di website.",
-        "button": "Kirim Pengalaman",
+        "button": "Kirim Testimoni",
         "button-loading": "Mengirim...",
         "trust": {
             "label": "TERIMA KASIH",
-            "title": "Setiap pengalaman",
-            "title-highlight": "membantu kami menjadi lebih baik.",
+            "title": "Setiap testimoni",
+            "title-highlight": "berarti bagi perjalanan kami.",
             "description": "Terima kasih telah mempercayai Saskardigital dan mengizinkan kami menjadi bagian dari perjalanan digital bisnis Anda."
         },
         "success": {
             "title": "Terima Kasih Sudah Berbagi.",
-            "description": "Kami sangat menghargai waktu dan masukan Anda. Pengalaman Anda telah berhasil dikirim."
+            "description": "Testimoni Anda telah berhasil dikirim. Kami sangat menghargai kepercayaan dan waktu yang Anda berikan."
         },
         "error": {
             "title": "Terjadi Kesalahan.",
-            "description": "Pengalaman Anda belum dapat dikirim saat ini. Silakan coba lagi."
+            "description": "Testimoni Anda belum dapat dikirim saat ini. Silakan coba lagi."
         }
     }
 }

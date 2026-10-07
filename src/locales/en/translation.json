@@ -749,18 +749,18 @@
         }
     },
     "client-experience": {
-        "eyebrow": "CLIENT EXPERIENCE",
-        "hero-title": "Your experience",
-        "hero-title-highlight": "matters to us.",
-        "hero-description": "We'd love to hear about your experience working with Saskardigital. Your feedback helps us improve, grow, and build better digital solutions.",
-        "form-label": "YOUR FEEDBACK",
-        "form-title": "Tell us about your",
-        "form-title-highlight": "experience.",
-        "form-description": "Your experience matters. Tell us how Saskardigital has supported your business and what you think about the solution we've built together.",
+        "eyebrow": "CLIENT TESTIMONIALS",
+        "hero-title": "Your Testimonial",
+        "hero-title-highlight": "Means a Lot to Us.",
+        "hero-description": "We'd love to hear about your experience working with Saskardigital. Your testimonial means a great deal to us and helps potential clients understand the quality of our work and services.",
+        "form-label": "YOUR TESTIMONIAL",
+        "form-title": "Tell Us About",
+        "form-title-highlight": "Our Collaboration.",
+        "form-description": "Share your thoughts about working with Saskardigital. Tell us how the solutions we built have helped your business and what it was like working with our team.",
         "feedback": {
-            "label": "CLIENT FEEDBACK",
+            "label": "CLIENT TESTIMONIAL",
             "number": "01",
-            "description": "We'd appreciate your honest experience."
+            "description": "We truly value every story and kind word from the clients who have placed their trust in us."
         },
         "fields": {
             "name": {
@@ -769,30 +769,30 @@
             },
             "position": {
                 "label": "Position / Role",
-                "placeholder": "e.g. Director, Manager, Owner"
+                "placeholder": "e.g. Director, Manager, Business Owner"
             },
             "message": {
-                "label": "Your Experience",
-                "hint": "Tell us what you think",
-                "placeholder": "Share your experience working with Saskardigital..."
+                "label": "Your Testimonial",
+                "hint": "Share your thoughts",
+                "placeholder": "Tell us about your experience working with Saskardigital..."
             }
         },
-        "privacy-note": "Your feedback will be reviewed before being published.",
-        "button": "Submit Experience",
+        "privacy-note": "Your testimonial will be reviewed before being published on our website.",
+        "button": "Submit Testimonial",
         "button-loading": "Submitting...",
         "trust": {
             "label": "THANK YOU",
-            "title": "Every experience",
-            "title-highlight": "helps us become better.",
-            "description": "Thank you for trusting Saskardigital and allowing us to be part of your digital journey."
+            "title": "Every testimonial",
+            "title-highlight": "is part of our journey.",
+            "description": "Thank you for trusting Saskardigital and allowing us to be part of your business's digital journey."
         },
         "success": {
             "title": "Thank You for Sharing.",
-            "description": "We truly appreciate your time and feedback. Your experience has been successfully submitted."
+            "description": "Your testimonial has been successfully submitted. We truly appreciate your trust and the time you've taken to share your thoughts with us."
         },
         "error": {
             "title": "Something Went Wrong.",
-            "description": "We couldn't submit your experience right now. Please try again."
+            "description": "We couldn't submit your testimonial at this time. Please try again later."
         }
     }
 }
