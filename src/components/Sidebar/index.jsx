@@ -8,6 +8,7 @@ import ModalConfirm from '../ModalConfirm';
 import AdminMenu from './Menus/AdminMenu';
 import Brand from '../Brand';
 import SuperadminMenu from './Menus/SuperadminMenu';
+import ClientMenu from './Menus/ClientMenu';
 
 export default function Sidebar() {
   const { isShowSidebar, setIsShowSidebar } = useSidebarContext();
@@ -76,6 +77,7 @@ export default function Sidebar() {
           <div className="sidebar-menu">
             {pathname.split('/')[1] === 'superadmin' && <SuperadminMenu />}
             {pathname.split('/')[1] === 'admin' && <AdminMenu />}
+            {pathname.split('/')[1] === 'client' && <ClientMenu />}
             <div className="bottom w-100">
               <div>
                 <hr className="mb-2" />

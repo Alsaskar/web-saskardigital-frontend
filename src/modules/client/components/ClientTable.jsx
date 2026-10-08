@@ -1,6 +1,6 @@
-import { Table, Button, Badge } from "react-bootstrap";
+import { Table, Button, Badge, Dropdown } from "react-bootstrap";
 
-const ClientTable = ({ clients, onEdit, onDelete }) => {
+const ClientTable = ({ clients, onEdit, onDelete, onDetail, onAddUser }) => {
     const getStatusVariant = (status) => {
         switch (status) {
             case "active":
@@ -20,9 +20,9 @@ const ClientTable = ({ clients, onEdit, onDelete }) => {
                     <th>Nama Perusahaan</th>
                     <th>Industry</th>
                     <th>PIC</th>
-                    <th>WA PIC</th>
+                    <th>Portal</th>
                     <th>Status</th>
-                    <th>Opsi</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
 
@@ -34,28 +34,65 @@ const ClientTable = ({ clients, onEdit, onDelete }) => {
                             <td>{data.nama_company === null ? '-' : data.nama_company}</td>
                             <td>{data.industry === null ? '-' : data.industry}</td>
                             <td>{data.pic_name}</td>
-                            <td>{data.pic_whatsapp}</td>
+                            <td>
+                                {data.user_count > 0 ? (
+                                    <Badge bg="success">
+                                        Enabled
+                                    </Badge>
+                                ) : (
+                                    <Badge bg="secondary">
+                                        Not Registered
+                                    </Badge>
+                                )}
+                            </td>
                             <td>
                                 <Badge bg={getStatusVariant(data.status)}>
                                     {data.status}
                                 </Badge>
                             </td>
                             <td>
-                                <Button
-                                    variant="primary"
-                                    size="sm"
-                                    onClick={() => onEdit(data)}
-                                >
-                                    <i className="bi bi-pencil"></i>
-                                </Button>{" "}
+                                <Dropdown>
+                                    <Dropdown.Toggle
+                                        variant="secondary"
+                                        size="sm"
+                                        id={`dropdown-client-${data.id}`}
+                                    >
+                                        <i className="bi bi-three-dots-vertical"></i>
+                                    </Dropdown.Toggle>
 
-                                <Button
-                                    variant="danger"
-                                    size="sm"
-                                    onClick={() => onDelete(data)}
-                                >
-                                    <i className="bi bi-trash"></i>
-                                </Button>
+                                    <Dropdown.Menu align="end">
+                                        <Dropdown.Item
+                                            onClick={() => onDetail(data)}
+                                        >
+                                            <i className="bi bi-eye me-2"></i>
+                                            View Client
+                                        </Dropdown.Item>
+
+                                        <Dropdown.Item
+                                            onClick={() => onAddUser(data)}
+                                        >
+                                            <i className="bi bi-person-plus me-2"></i>
+                                            Add User
+                                        </Dropdown.Item>
+
+                                        <Dropdown.Item
+                                            onClick={() => onEdit(data)}
+                                        >
+                                            <i className="bi bi-pencil me-2"></i>
+                                            Edit Client
+                                        </Dropdown.Item>
+
+                                        <Dropdown.Divider />
+
+                                        <Dropdown.Item
+                                            className="text-danger"
+                                            onClick={() => onDelete(data)}
+                                        >
+                                            <i className="bi bi-trash me-2"></i>
+                                            Delete Client
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </td>
                         </tr>
                     ))

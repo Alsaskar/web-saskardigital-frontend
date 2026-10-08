@@ -5,6 +5,8 @@ import ModalEditClient from "@/modules/client/components/ModalEdit";
 import ClientTable from "@/modules/client/components/ClientTable";
 import { useClient } from "@/modules/client/hooks/useClient";
 import { useEffect, useState } from "react";
+import ModalAddUserClient from "../../../../modules/client/components/ModalAddUser";
+import ModalDetailClient from "../../../../modules/client/components/ModalDetail";
 
 const Layout = () => {
     const { fetchClient } = useClient()
@@ -35,6 +37,20 @@ const Layout = () => {
         setShowModalDelete(true)
     }
     const _handleCloseModalDelete = () => setShowModalDelete(false)
+
+    const [showModalAddUser, setShowModalAddUser] = useState(false)
+    const _handleShowModalAddUser = (data) => {
+        setSelectedData(data)
+        setShowModalAddUser(true)
+    }
+    const _handleCloseModalAddUser = () => setShowModalAddUser(false)
+
+    const [showModalDetail, setShowModalDetail] = useState(false)
+    const _handleShowModalDetail = (data) => {
+        setSelectedData(data)
+        setShowModalDetail(true)
+    }
+    const _handleCloseModalDetail = () => setShowModalDetail(false)
 
     const _fetchData = async () => {
         const res = await fetchClient(page, search);
@@ -76,6 +92,19 @@ const Layout = () => {
                 onSuccess={_fetchData}
             />
 
+            <ModalAddUserClient 
+                data={selectedData}
+                show={showModalAddUser}
+                handleClose={_handleCloseModalAddUser}
+                onSuccess={_fetchData}
+            />
+
+            <ModalDetailClient 
+                data={selectedData}
+                show={showModalDetail}
+                handleClose={_handleCloseModalDetail}
+            />
+
             <div className="card">
                 <div className="card-body">
                     <h4>Kelola Client</h4>
@@ -108,6 +137,8 @@ const Layout = () => {
                         clients={clients}
                         onEdit={_handleShowModalEdit}
                         onDelete={_handleShowModalDelete}
+                        onDetail={_handleShowModalDetail}
+                        onAddUser={_handleShowModalAddUser}
                     />
 
                     <DynamicPagination

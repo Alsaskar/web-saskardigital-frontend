@@ -9,6 +9,7 @@ const UserTable = ({ users, onEdit, onDelete }) => {
                     <th>Firstname</th>
                     <th>Lastname</th>
                     <th>Email</th>
+                    <th>Role</th>
                     <th>Opsi</th>
                 </tr>
             </thead>
@@ -21,6 +22,7 @@ const UserTable = ({ users, onEdit, onDelete }) => {
                             <td>{data.firstname}</td>
                             <td>{data.lastname}</td>
                             <td>{data.email}</td>
+                            <td>{data.role}</td>
                             <td>
                                 {/* <Button
                                     variant="primary"

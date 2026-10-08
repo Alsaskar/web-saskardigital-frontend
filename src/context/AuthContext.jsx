@@ -5,12 +5,14 @@ export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
+    const [client, setClient] = useState(null)
     const [loading, setLoading] = useState(true)
 
     const refreshAuth = async () => {
         try {
             const res = await axiosInstance.get("/auth", { withCredentials: true });
             setUser(res.data.data.user);
+            setClient(res.data.data.user.client);
 
             return res.data.data.user;
         } catch {
@@ -51,7 +53,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ user, login, logout, loading, refreshAuth }}>
+        <AuthContext.Provider value={{ user, client, login, logout, loading, refreshAuth }}>
             {children}
         </AuthContext.Provider>
     );

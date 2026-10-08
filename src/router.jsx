@@ -9,6 +9,8 @@ import Login from './pages/public/login';
 import SuperadminRoutes from './routes/SuperadminRoutes';
 import ClientExperience from './pages/public/client-experience';
 import ProjectRequestPublic from './pages/public/project-request';
+import PortalClientLogin from './pages/public/portal-client';
+import ClientRoutes from './routes/ClientRoutes';
 
 const router = createBrowserRouter([
   // Public Route
@@ -68,9 +70,18 @@ const router = createBrowserRouter([
       </PublicRoute>
     ),
   },
+  {
+    path: '/client-portal',
+    element: (
+      <PublicRoute>
+        <PortalClientLogin />
+      </PublicRoute>
+    ),
+  },
 
   // Protected Route
   { path: '/superadmin/*', element: <SuperadminRoutes /> },
+  { path: '/client/*', element: <ClientRoutes /> },
 
   // Route 404 - Page not found
   {
