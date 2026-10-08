@@ -779,5 +779,35 @@
             "title": "Terjadi Kesalahan.",
             "description": "Testimoni Anda belum dapat dikirim saat ini. Silakan coba lagi."
         }
+    },
+    "project-request-page": {
+        "hero": {
+            "title": "Mari wujudkan",
+            "title-highlight": "sesuatu yang hebat.",
+            "description": "Ceritakan kebutuhan digital bisnis Anda. Kami akan mempelajari kebutuhan Anda dan membantu menemukan solusi yang tepat.",
+            "scroll": "Scroll ke bawah"
+        },
+        "next": {
+            "label": "APA YANG TERJADI SELANJUTNYA",
+            "title": "Dari ide",
+            "title-highlight": "menjadi kenyataan.",
+            "steps": {
+                "review": {
+                    "number": "01",
+                    "title": "Pelajari",
+                    "description": "Kami mempelajari kebutuhan dan tujuan proyek yang Anda kirimkan."
+                },
+                "discuss": {
+                    "number": "02",
+                    "title": "Diskusi",
+                    "description": "Kami menghubungi Anda untuk membahas kebutuhan dan lingkup proyek."
+                },
+                "proposal": {
+                    "number": "03",
+                    "title": "Penawaran",
+                    "description": "Setelah lingkup proyek jelas, kami menyiapkan solusi dan proposal proyek."
+                }
+            }
+        }
     }
 }

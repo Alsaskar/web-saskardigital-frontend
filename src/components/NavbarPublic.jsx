@@ -65,6 +65,7 @@ const NavbarPublic = ({ solid = false }) => {
                             </NavDropdown>
 
                             <Nav.Link href="/portfolio">{t("navbar-public.portfolio")}</Nav.Link>
+                            <Nav.Link href="/project-request">PROJECT REQUEST</Nav.Link>
                         </Nav>
 
                         <div className="navbar-right">

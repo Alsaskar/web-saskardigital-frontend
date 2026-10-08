@@ -8,6 +8,7 @@ import SoftwareCustom from './pages/public/services/software-custom';
 import Login from './pages/public/login';
 import SuperadminRoutes from './routes/SuperadminRoutes';
 import ClientExperience from './pages/public/client-experience';
+import ProjectRequestPublic from './pages/public/project-request';
 
 const router = createBrowserRouter([
   // Public Route
@@ -56,6 +57,14 @@ const router = createBrowserRouter([
     element: (
       <PublicRoute>
         <ClientExperience />
+      </PublicRoute>
+    ),
+  },
+  {
+    path: '/project-request',
+    element: (
+      <PublicRoute>
+        <ProjectRequestPublic />
       </PublicRoute>
     ),
   },

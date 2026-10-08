@@ -115,15 +115,6 @@ const Layout = () => {
                         <div className="portfolio-container">
                             <div className="portfolio-hero-content">
 
-                                <div
-                                    className="portfolio-hero-badge"
-                                    data-aos="fade-down"
-                                    data-aos-duration="700"
-                                >
-                                    <span className="portfolio-badge-dot"></span>
-                                    {t("portfolio-public.eyebrow")}
-                                </div>
-
                                 <h1
                                     data-aos="fade-up"
                                     data-aos-delay="100"

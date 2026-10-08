@@ -75,6 +75,10 @@ const FooterSection = () => {
                                 <a href="/portfolio">
                                     {t('footer.portfolio')}
                                 </a>
+
+                                <a href="/project-request">
+                                    Project Request
+                                </a>
                             </div>
                         </div>
 

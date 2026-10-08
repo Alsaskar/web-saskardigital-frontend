@@ -149,6 +149,16 @@ const Layout = () => {
                                 >
                                     {t("navbar.contact")}
                                 </Nav.Link>
+
+                                <Nav.Link
+                                    href="/#"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        scrollToSection("section-consult-project");
+                                    }}
+                                >
+                                    PROJECT REQUEST
+                                </Nav.Link>
                             </Nav>
 
                             <div className="navbar-right">
