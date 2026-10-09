@@ -1,0 +1,244 @@
+.maintenance-detail-modal .modal-content {
+    border: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.maintenance-detail-modal .modal-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #edf0f2;
+    background: #fff;
+}
+
+.maintenance-detail-modal .modal-title {
+    margin-top: 4px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #17191c;
+}
+
+.maintenance-modal-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #6c757d;
+}
+
+.maintenance-modal-project {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.maintenance-detail-modal .modal-body {
+    padding: 24px 28px;
+    background: #f8f9fa;
+}
+
+.maintenance-loading {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.maintenance-empty {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.maintenance-empty-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background: #e9ecef;
+    color: #6c757d;
+    font-size: 24px;
+}
+
+.maintenance-empty h6 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.maintenance-empty p {
+    max-width: 380px;
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.maintenance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.maintenance-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.maintenance-card .card-body {
+    padding: 22px;
+}
+
+.maintenance-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.maintenance-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.maintenance-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #f1f3f5;
+    color: #343a40;
+    font-size: 18px;
+}
+
+.maintenance-title-wrapper h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.maintenance-title-wrapper span {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #8a9198;
+}
+
+.maintenance-status {
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.maintenance-description {
+    margin: 20px 0;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.maintenance-description p {
+    margin: 0;
+    color: #555d66;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.maintenance-info {
+    margin-top: 4px;
+}
+
+.maintenance-info-item {
+    height: 100%;
+    padding: 14px 15px;
+    border: 1px solid #edf0f2;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.maintenance-info-item span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 7px;
+    color: #8a9198;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.maintenance-info-item span i {
+    font-size: 13px;
+}
+
+.maintenance-info-item strong {
+    display: block;
+    color: #25282b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.maintenance-price {
+    font-size: 15px !important;
+}
+
+.maintenance-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #edf0f2;
+    color: #9299a0;
+    font-size: 11px;
+}
+
+.maintenance-detail-modal .modal-footer {
+    padding: 16px 28px;
+    border-top: 1px solid #edf0f2;
+    background: #fff;
+}
+
+@media (max-width: 576px) {
+    .maintenance-detail-modal .modal-header,
+    .maintenance-detail-modal .modal-body,
+    .maintenance-detail-modal .modal-footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .maintenance-card .card-body {
+        padding: 17px;
+    }
+
+    .maintenance-card-header {
+        align-items: flex-start;
+    }
+
+    .maintenance-status {
+        flex-shrink: 0;
+    }
+
+    .maintenance-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

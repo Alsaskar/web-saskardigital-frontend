@@ -1,20 +1,21 @@
 import { useState } from "react"
 import {
-  createMaintenanceService,
-  deleteMaintenanceService,
-  editMaintenanceService,
-  getMaintenanceByIdProjectService,
-  getMaintenanceService
-} from "../services/MaintenanceService"
+  createTicketService,
+  deleteTicketService,
+  editTicketService,
+  getTicketService,
+  updateStatusTicketService,
+  viewTicketService
+} from "../services/TicketService"
 
-export const useMaintenance = () => {
+export const useTicket = () => {
     const [loading, setLoading] = useState(false)
 
-    const addMaintenance = async (data) => {
+    const addTicket = async (data) => {
         setLoading(true)
 
         try {
-            const res = await createMaintenanceService(data)
+            const res = await createTicketService(data)
 
             return {
                 success: true,
@@ -31,9 +32,9 @@ export const useMaintenance = () => {
         }
     }
 
-    const fetchMaintenance = async (page, search) => {
+    const viewTicket = async (ticket_number) => {
         try {
-            const res = await getMaintenanceService(page, search);
+            const res = await viewTicketService(ticket_number);
 
             return res.data;
         } catch (err) {
@@ -43,9 +44,9 @@ export const useMaintenance = () => {
         }
     }
 
-    const getByIdProjectMaintenance = async (projectId) => {
+    const fetchTicket = async (page, search, clientId) => {
         try {
-            const res = await getMaintenanceByIdProjectService(projectId);
+            const res = await getTicketService(page, search, clientId);
 
             return res.data;
         } catch (err) {
@@ -55,11 +56,11 @@ export const useMaintenance = () => {
         }
     }
 
-    const editMaintenance = async (id, data) => {
+    const editTicket = async (id, data) => {
         setLoading(true);
 
         try {
-            const res = await editMaintenanceService(id, data);
+            const res = await editTicketService(id, data);
 
             return {
                 success: true,
@@ -68,18 +69,38 @@ export const useMaintenance = () => {
         } catch (err) {
             return {
                 success: false,
-                message: err.response?.data?.message || "Gagal mengupdate maintenance"
+                message: err.response?.data?.message || "Gagal mengupdate ticket"
             };
         } finally {
             setLoading(false);
         }
     };
 
-    const removeMaintenance = async (id) => {
+    const updateStatus = async (id, data) => {
         setLoading(true);
 
         try {
-            const res = await deleteMaintenanceService(id);
+            const res = await updateStatusTicketService(id, data);
+
+            return {
+                success: true,
+                message: res.data.message
+            };
+        } catch (err) {
+            return {
+                success: false,
+                message: err.response?.data?.message || "Gagal mengupdate ticket"
+            };
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const removeTicket = async (id) => {
+        setLoading(true);
+
+        try {
+            const res = await deleteTicketService(id);
 
             return {
                 success: res.data.success,
@@ -96,11 +117,12 @@ export const useMaintenance = () => {
     }
 
     return {
-        addMaintenance,
-        fetchMaintenance,
-        getByIdProjectMaintenance,
-        editMaintenance,
-        removeMaintenance,
+        addTicket,
+        viewTicket,
+        fetchTicket,
+        editTicket,
+        updateStatus,
+        removeTicket,
         loading
     }
 }

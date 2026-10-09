@@ -4,6 +4,10 @@ export const createMaintenanceService = async (payload) => {
   return axiosInstance.post(`/maintenance`, payload)
 }
 
+export const getMaintenanceByIdProjectService = async (projectId) => {
+  return await axiosInstance.get(`/maintenance/get-project-id/${projectId}`);
+};
+
 export const getMaintenanceService = async (page, search) => {
   return await axiosInstance.get(`/maintenance`, {
     params: { page, search }

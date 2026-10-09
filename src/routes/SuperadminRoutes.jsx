@@ -12,6 +12,8 @@ import ProjectsSuperadmin from '../pages/protected/superadmin/projects';
 import PortfolioSuperadmin from '../pages/protected/superadmin/portfolio';
 import MaintenanceSuperadmin from '../pages/protected/superadmin/maintenance';
 import ChangePasswordSuperadmin from '../pages/protected/superadmin/change-password';
+import TicketSuperadmin from '../pages/protected/superadmin/ticket';
+import ViewTicketSuperadmin from '../pages/protected/superadmin/ticket-view';
 
 const SuperadminRoutes = () => {
   return (
@@ -116,6 +118,24 @@ const SuperadminRoutes = () => {
                 element={
                   <ProtectedRoute allowedRoles={['superadmin']}>
                     <MaintenanceSuperadmin />
+                  </ProtectedRoute>
+                }
+              />
+
+              <Route
+                path="/ticket"
+                element={
+                  <ProtectedRoute allowedRoles={['superadmin']}>
+                    <TicketSuperadmin />
+                  </ProtectedRoute>
+                }
+              />
+
+              <Route
+                path="/ticket-view/:ticket_number"
+                element={
+                  <ProtectedRoute allowedRoles={['superadmin']}>
+                    <ViewTicketSuperadmin />
                   </ProtectedRoute>
                 }
               />

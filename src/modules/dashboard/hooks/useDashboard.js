@@ -1,5 +1,6 @@
 import { useState } from "react"
 import {
+    getDashboardClientService,
   getDashboardService
 } from "../services/DashboardService"
 
@@ -21,8 +22,24 @@ export const useDashboard = () => {
         }
     }
 
+    const fetchDashboardClient = async (clientId) => {
+        try {
+            setLoading(true)
+            const res = await getDashboardClientService(clientId);
+
+            return res.data;
+        } catch (err) {
+            console.log(err);
+
+            return null;
+        }finally{
+            setLoading(false)
+        }
+    }
+
     return {
         fetchDashboard,
+        fetchDashboardClient,
         loading
     }
 }

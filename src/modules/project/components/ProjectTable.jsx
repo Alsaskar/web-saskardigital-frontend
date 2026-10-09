@@ -1,8 +1,8 @@
-import { Table, Button, Badge } from "react-bootstrap";
+import { Table, Button, Badge, Dropdown } from "react-bootstrap";
 import { formatAmount } from "../../../utils/utilHook";
 import { formatDate } from "../../../../../backend/core/utils/dateUtil";
 
-const ProjectTable = ({ projects, onEdit, onDelete, onDetail, onUpdateStatus }) => {
+const ProjectTable = ({ projects, onEdit, onDelete, onDetail, onUpdateStatus, onDetailMaintenance, isAdmin = false }) => {
     const getCategoryVariant = (category) => {
         switch (category) {
             case "web company profile":
@@ -43,15 +43,14 @@ const ProjectTable = ({ projects, onEdit, onDelete, onDetail, onUpdateStatus }) 
             <thead>
                 <tr align="center">
                     <th>#</th>
-                    <th>Client</th>
+                    {isAdmin && <th>Client</th>}
                     <th>Project</th>
-                    <th>Tipe</th>
                     <th>Kategori</th>
                     <th>Harga</th>
                     <th>Start Date</th>
                     <th>Deadline</th>
                     <th>Status</th>
-                    <th>Opsi</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
 
@@ -60,9 +59,8 @@ const ProjectTable = ({ projects, onEdit, onDelete, onDetail, onUpdateStatus }) 
                     projects.map((data, index) => (
                         <tr key={index} align="center">
                             <td>{index + 1}</td>
-                            <td>{data.client?.nama_company}</td>
+                            {isAdmin && <td>{data.client?.nama_company}</td>}
                             <td>{data.nama}</td>
-                            <td>{data.project_type}</td>
                             <td>
                                 <Badge
                                     bg={getCategoryVariant(
@@ -81,39 +79,74 @@ const ProjectTable = ({ projects, onEdit, onDelete, onDetail, onUpdateStatus }) 
                                 </Badge>
                             </td>
                             <td>
-                                <Button
-                                    variant="success"
-                                    size="sm"
-                                    onClick={() => onDetail(data)}
-                                    title="Detail Project"
-                                >
-                                    <i className="bi bi-eye"></i>
-                                </Button>{" "}
+                                <Dropdown>
+                                    <Dropdown.Toggle
+                                        variant="secondary"
+                                        size="sm"
+                                        id={`dropdown-client-${data.id}`}
+                                    >
+                                        <i className="bi bi-three-dots-vertical"></i>
+                                    </Dropdown.Toggle>
 
-                                <Button
-                                    variant="warning"
-                                    size="sm"
-                                    onClick={() => onUpdateStatus(data)}
-                                    title="Update Status Project"
-                                >
-                                    <i className="bi bi-arrow-repeat"></i>
-                                </Button>{" "}
+                                    <Dropdown.Menu
+                                        align="end"
+                                        popperConfig={{
+                                            strategy: "fixed",
+                                            modifiers: [
+                                                {
+                                                    name: "preventOverflow",
+                                                    options: {
+                                                        boundary: "viewport",
+                                                    },
+                                                },
+                                                {
+                                                    name: "flip",
+                                                    options: {
+                                                        fallbackPlacements: [
+                                                            "top-end",
+                                                            "bottom-end",
+                                                        ],
+                                                    },
+                                                },
+                                            ],
+                                        }}
+                                    >
+                                        <Dropdown.Item onClick={() => onDetail(data)}>
+                                            <i className="bi bi-eye me-2"></i>
+                                            View Project
+                                        </Dropdown.Item>
 
-                                <Button
-                                    variant="primary"
-                                    size="sm"
-                                    onClick={() => onEdit(data)}
-                                >
-                                    <i className="bi bi-pencil"></i>
-                                </Button>{" "}
+                                        <Dropdown.Item onClick={() => onDetailMaintenance(data)}>
+                                            <i className="bi bi-tools me-2"></i>
+                                            View Maintenance
+                                        </Dropdown.Item>
 
-                                <Button
-                                    variant="danger"
-                                    size="sm"
-                                    onClick={() => onDelete(data)}
-                                >
-                                    <i className="bi bi-trash"></i>
-                                </Button>
+                                        {isAdmin && (
+                                            <>
+                                                <Dropdown.Item onClick={() => onUpdateStatus(data)}>
+                                                    <i className="bi bi-arrow-repeat me-2"></i>
+                                                    Update Status
+                                                </Dropdown.Item>
+
+                                                <Dropdown.Item onClick={() => onEdit(data)}>
+                                                    <i className="bi bi-pencil me-2"></i>
+                                                    Edit Project
+                                                </Dropdown.Item>
+
+                                                <Dropdown.Divider />
+
+                                                <Dropdown.Item
+                                                    className="text-danger"
+                                                    onClick={() => onDelete(data)}
+                                                >
+                                                    <i className="bi bi-trash me-2"></i>
+                                                    Delete Project
+                                                </Dropdown.Item>
+                                            </>
+                                        )}
+
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </td>
                         </tr>
                     ))

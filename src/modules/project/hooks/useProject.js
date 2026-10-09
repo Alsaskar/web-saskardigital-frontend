@@ -32,9 +32,9 @@ export const useProject = () => {
         }
     }
 
-    const fetchProject = async (page, search) => {
+    const fetchProject = async (page, search, clientId) => {
         try {
-            const res = await getProjectService(page, search);
+            const res = await getProjectService(page, search, clientId);
 
             return res.data;
         } catch (err) {

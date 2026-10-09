@@ -64,6 +64,12 @@ export default function SuperadminMenu() {
         SYSTEM
       </div>
 
+      <MenuItem
+        label="Ticket"
+        href="/superadmin/ticket"
+        icon={<i className="bi bi-ticket-detailed-fill"></i>}
+      />
+
       <Submenu
         label="Settings"
         id="settings"

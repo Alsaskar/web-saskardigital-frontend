@@ -4,9 +4,9 @@ export const createProjectService = async (payload) => {
   return axiosInstance.post(`/project`, payload)
 }
 
-export const getProjectService = async (page, search) => {
+export const getProjectService = async (page, search, clientId) => {
   return await axiosInstance.get(`/project`, {
-    params: { page, search }
+    params: { page, search, clientId }
   });
 };
 

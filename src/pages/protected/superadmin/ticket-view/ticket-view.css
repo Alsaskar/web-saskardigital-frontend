@@ -1,0 +1,971 @@
+.tv-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #182230;
+    font-family: inherit;
+    padding: 0 0 32px;
+}
+
+.tv-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.tv-header {
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6eaf0;
+    margin-bottom: 42px;
+}
+
+.tv-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #182230;
+}
+
+.tv-brand-icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: #eaf1ff;
+    color: #3568d4;
+    font-size: 22px;
+}
+
+.tv-brand strong,
+.tv-brand small {
+    display: block;
+}
+
+.tv-brand strong {
+    font-size: 16px;
+    font-weight: 750;
+    letter-spacing: -0.3px;
+}
+
+.tv-brand small {
+    margin-top: 3px;
+    color: #8792a2;
+    font-size: 12px;
+}
+
+.tv-header-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #687589;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tv-header-label i {
+    color: #3476df;
+    font-size: 17px;
+}
+
+.tv-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 30px;
+}
+
+.tv-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: #4776cf;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.tv-eyebrow-dot {
+    width: 7px;
+    height: 7px;
+    background: #4776cf;
+    border-radius: 50%;
+}
+
+.tv-welcome h1 {
+    margin: 0;
+    color: #152238;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.tv-welcome > div:first-child > p {
+    max-width: 550px;
+    margin: 12px 0 0;
+    color: #778397;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tv-ticket-number-card {
+    min-width: 245px;
+    padding: 19px 22px;
+    background: #fff;
+    border: 1px solid #e5eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgb(31 51 83 / 3%);
+}
+
+.tv-ticket-number-card > span,
+.tv-ticket-number-card > strong {
+    display: block;
+}
+
+.tv-ticket-number-card > span {
+    color: #8490a3;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.tv-ticket-number-card > strong {
+    margin-top: 8px;
+    color: #285fc5;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+}
+
+.tv-copy-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #748198;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tv-copy-button:hover {
+    color: #285fc5;
+}
+
+.tv-status-banner {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 23px 25px;
+    margin-bottom: 25px;
+    background: linear-gradient(110deg, #edf4ff, #f8faff);
+    border: 1px solid #dce8fb;
+    border-radius: 17px;
+}
+
+.tv-status-banner-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: #dce9ff;
+    color: #3168cf;
+    font-size: 23px;
+}
+
+.tv-status-banner-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.tv-status-banner-content > span {
+    display: block;
+    margin-bottom: 4px;
+    color: #7788a6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.tv-status-banner-content > strong {
+    color: #213c68;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.tv-status-banner-content > p {
+    margin: 5px 0 0;
+    color: #73819a;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.tv-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.tv-status-badge > span,
+.tv-priority-text > span {
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.tv-status-open {
+    color: #2563c7;
+    background: #dceaff;
+}
+
+.tv-status-progress {
+    color: #6d45ca;
+    background: #eee6ff;
+}
+
+.tv-status-waiting {
+    color: #a16b0b;
+    background: #fff0c9;
+}
+
+.tv-status-resolved {
+    color: #16845d;
+    background: #d9f7e9;
+}
+
+.tv-status-closed {
+    color: #566174;
+    background: #e8edf3;
+}
+
+.tv-status-cancelled {
+    color: #c34250;
+    background: #ffe3e6;
+}
+
+.tv-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 310px;
+    align-items: start;
+    gap: 24px;
+}
+
+.tv-main-column,
+.tv-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 0;
+}
+
+.tv-card {
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #e8ecf2;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgb(26 43 70 / 2.5%);
+    min-width: 0;
+}
+
+.tv-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 23px;
+}
+
+.tv-section-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8b97a9;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.tv-card-header h2 {
+    margin: 0;
+    color: #202d40;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.tv-card-header-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #f0f4fb;
+    color: #5277b6;
+    font-size: 19px;
+}
+
+.tv-subject {
+    padding: 19px 20px;
+    background: #f8faff;
+    border: 1px solid #eaf0fa;
+    border-radius: 12px;
+}
+
+.tv-subject-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #8794a9;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.tv-subject h3 {
+    margin: 0;
+    color: #26354b;
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.tv-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 18px;
+    padding-top: 25px;
+}
+
+.tv-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.tv-info-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 41px;
+    height: 41px;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+.tv-icon-purple {
+    color: #7950c9;
+    background: #f0e9ff;
+}
+
+.tv-icon-orange {
+    color: #c37a18;
+    background: #fff0dc;
+}
+
+.tv-icon-blue {
+    color: #3476d5;
+    background: #e5efff;
+}
+
+.tv-icon-green {
+    color: #19865d;
+    background: #def7e9;
+}
+
+.tv-info-item > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.tv-info-label {
+    color: #8894a5;
+    font-size: 11px;
+}
+
+.tv-info-item strong {
+    color: #344258;
+    font-size: 12px;
+    font-weight: 750;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+
+.tv-priority-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.tv-priority-low {
+    color: #25815f !important;
+}
+
+.tv-priority-medium {
+    color: #b17a19 !important;
+}
+
+.tv-priority-high {
+    color: #d26925 !important;
+}
+
+.tv-priority-urgent {
+    color: #d33f51 !important;
+}
+
+.tv-description {
+    color: #4c596c;
+    font-size: 14px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.tv-description > :first-child {
+    margin-top: 0;
+}
+
+.tv-description > :last-child {
+    margin-bottom: 0;
+}
+
+.tv-description p {
+    margin-bottom: 14px;
+}
+
+.tv-description h1,
+.tv-description h2,
+.tv-description h3,
+.tv-description h4 {
+    margin: 20px 0 10px;
+    color: #27364b;
+    font-weight: 750;
+    line-height: 1.5;
+}
+
+.tv-description ul,
+.tv-description ol {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.tv-description blockquote {
+    margin: 18px 0;
+    padding: 12px 16px;
+    background: #f5f8fc;
+    border-left: 3px solid #6d91d7;
+    color: #627087;
+}
+
+.tv-description pre {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: #182230;
+    color: #e9eff8;
+    font-size: 12px;
+}
+
+.tv-description code {
+    overflow-wrap: anywhere;
+}
+
+.tv-description img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 16px 0;
+    border: 1px solid #e5eaf1;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.tv-description a {
+    color: #2f67c7;
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+.tv-description table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+.tv-description th,
+.tv-description td {
+    padding: 9px 12px;
+    border: 1px solid #e3e8ef;
+}
+
+.tv-description hr {
+    border-color: #e6eaf0;
+}
+
+.tv-help-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 23px;
+    background: #edf5ff;
+    border: 1px solid #dceaff;
+    border-radius: 15px;
+}
+
+.tv-help-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background: #d9e9ff;
+    color: #326bc8;
+    font-size: 21px;
+}
+
+.tv-help-card h3 {
+    margin: 1px 0 7px;
+    color: #27466f;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.tv-help-card p {
+    margin: 0;
+    color: #6b809d;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.tv-summary-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-summary-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf0f5;
+    min-width: 0;
+}
+
+.tv-summary-item:first-child {
+    padding-top: 0;
+}
+
+.tv-summary-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.tv-summary-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: #f0f4fa;
+    color: #6480aa;
+    font-size: 16px;
+}
+
+.tv-summary-item > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.tv-summary-item > div > span {
+    color: #8a95a6;
+    font-size: 11px;
+}
+
+.tv-summary-item strong {
+    color: #334258;
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.tv-status-guide .tv-card-header {
+    margin-bottom: 15px;
+}
+
+.tv-guide-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.tv-guide-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.tv-guide-dot {
+    flex-shrink: 0;
+    width: 9px;
+    height: 9px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.tv-dot-open {
+    background: #3476d5;
+}
+
+.tv-dot-progress {
+    background: #8257d5;
+}
+
+.tv-dot-waiting {
+    background: #d39a28;
+}
+
+.tv-dot-resolved {
+    background: #24986b;
+}
+
+.tv-guide-item strong {
+    display: block;
+    color: #344258;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.tv-guide-item p {
+    margin: 5px 0 0;
+    color: #8a95a6;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.tv-privacy-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #e5eaf1;
+    border-radius: 12px;
+    background: #f9fafc;
+}
+
+.tv-privacy-note > i {
+    margin-top: 2px;
+    color: #7185a2;
+    font-size: 16px;
+}
+
+.tv-privacy-note p {
+    margin: 0;
+    color: #7b8799;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.tv-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 27px;
+    margin-top: 30px;
+    border-top: 1px solid #e5eaf0;
+    color: #919bad;
+    font-size: 11px;
+}
+
+.tv-footer > span:last-child {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tv-footer i {
+    color: #6484bd;
+}
+
+.tv-state-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 360px;
+    padding: 40px 24px;
+    margin-top: 60px;
+    background: #fff;
+    border: 1px solid #e8ecf2;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.tv-loader {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 22px;
+    border: 3px solid #e2eaf8;
+    border-top-color: #3974d6;
+    border-radius: 50%;
+    animation: tv-spin 0.8s linear infinite;
+}
+
+@keyframes tv-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tv-state-card h4,
+.tv-state-card h5 {
+    margin: 0;
+    color: #28364b;
+    font-weight: 800;
+}
+
+.tv-state-card p {
+    max-width: 420px;
+    margin: 10px 0 0;
+    color: #8390a2;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.tv-state-icon {
+    display: grid;
+    place-items: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    font-size: 28px;
+}
+
+.tv-state-icon-error {
+    background: #fff0f1;
+    color: #d04d5b;
+}
+
+.tv-error-number {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #f3f5f9;
+    color: #67758b;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+@media (max-width: 900px) {
+    .tv-content-grid {
+        grid-template-columns: minmax(0, 1fr) 270px;
+        gap: 18px;
+    }
+
+    .tv-card {
+        padding: 21px;
+    }
+
+    .tv-welcome {
+        align-items: flex-start;
+    }
+
+    .tv-ticket-number-card {
+        min-width: 215px;
+    }
+}
+
+@media (max-width: 720px) {
+    .tv-container {
+        width: calc(100% - 28px);
+    }
+
+    .tv-header {
+        min-height: 72px;
+        margin-bottom: 30px;
+    }
+
+    .tv-brand-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .tv-brand strong {
+        font-size: 14px;
+    }
+
+    .tv-brand small {
+        font-size: 10px;
+    }
+
+    .tv-header-label {
+        font-size: 11px;
+    }
+
+    .tv-welcome {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 22px;
+    }
+
+    .tv-welcome h1 {
+        font-size: 29px;
+    }
+
+    .tv-welcome > div:first-child > p {
+        font-size: 13px;
+    }
+
+    .tv-ticket-number-card {
+        width: 100%;
+        min-width: 0;
+        padding: 16px 18px;
+    }
+
+    .tv-ticket-number-card > strong {
+        font-size: 21px;
+    }
+
+    .tv-status-banner {
+        flex-wrap: wrap;
+        gap: 13px;
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .tv-status-banner-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+    .tv-status-banner-content {
+        flex-basis: calc(100% - 60px);
+    }
+
+    .tv-status-banner-content > strong {
+        font-size: 17px;
+    }
+
+    .tv-status-badge {
+        margin-left: 55px;
+    }
+
+    .tv-content-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .tv-main-column,
+    .tv-sidebar {
+        gap: 18px;
+    }
+
+    .tv-card {
+        padding: 19px;
+        border-radius: 14px;
+    }
+
+    .tv-card-header {
+        margin-bottom: 18px;
+    }
+
+    .tv-card-header h2 {
+        font-size: 16px;
+    }
+
+    .tv-subject {
+        padding: 16px;
+    }
+
+    .tv-subject h3 {
+        font-size: 16px;
+    }
+
+    .tv-info-grid {
+        gap: 20px 12px;
+        padding-top: 20px;
+    }
+
+    .tv-info-item {
+        align-items: flex-start;
+        gap: 9px;
+    }
+
+    .tv-info-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .tv-info-item strong {
+        font-size: 11px;
+    }
+
+    .tv-description {
+        font-size: 13px;
+    }
+
+    .tv-help-card {
+        padding: 18px;
+    }
+
+    .tv-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .tv-container {
+        width: calc(100% - 22px);
+    }
+
+    .tv-header-label {
+        font-size: 0;
+    }
+
+    .tv-header-label i {
+        font-size: 19px;
+    }
+
+    .tv-info-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .tv-status-banner-content > p {
+        font-size: 12px;
+    }
+}

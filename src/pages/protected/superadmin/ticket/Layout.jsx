@@ -1,17 +1,15 @@
 import DynamicPagination from "@/components/DynamicPagination";
-import ModalAddProject from "@/modules/project/components/ModalAdd";
-import ModalDeleteProject from "@/modules/project/components/ModalDelete";
-import ModalEditProject from "@/modules/project/components/ModalEdit";
-import ProjectTable from "@/modules/project/components/ProjectTable";
-import { useProject } from "@/modules/project/hooks/useProject";
+import ModalAddTicket from "@/modules/ticket/components/ModalAdd";
+import ModalDeleteTicket from "@/modules/ticket/components/ModalDelete";
+import ModalEditTicket from "@/modules/ticket/components/ModalEdit";
+import TicketTable from "@/modules/ticket/components/TicketTable";
+import { useTicket } from "@/modules/ticket/hooks/useTicket";
 import { useEffect, useState } from "react";
-import ModalUpdateStatusProject from "../../../../modules/project/components/ModalUpdateStatus";
-import ModalDetailProject from "../../../../modules/project/components/ModalDetail";
-import ModalDetailMaintenance from "../../../../modules/project/components/ModalMaintenance";
+import ModalUpdateStatusTicket from "../../../../modules/ticket/components/ModalUpdateStatus";
 
 const Layout = () => {
-    const { fetchProject } = useProject()
-    const [projects, setProjects] = useState([])
+    const { fetchTicket } = useTicket()
+    const [tickets, setTickets] = useState([])
 
     // pagination state
     const [page, setPage] = useState(1);
@@ -46,25 +44,11 @@ const Layout = () => {
     }
     const _handleCloseModalUpdateStatus = () => setShowModalUpdateStatus(false)
 
-    const [showModalDetail, setShowModalDetail] = useState(false)
-    const _handleShowModalDetail = (data) => {
-        setSelectedData(data)
-        setShowModalDetail(true)
-    }
-    const _handleCloseModalDetail = () => setShowModalDetail(false)
-
-    const [showModalDetailMaintenance, setShowModalDetailMaintenance] = useState(false)
-    const _handleShowModalDetailMaintenance = (data) => {
-        setSelectedData(data)
-        setShowModalDetailMaintenance(true)
-    }
-    const _handleCloseModalDetailMaintenance = () => setShowModalDetailMaintenance(false)
-
     const _fetchData = async () => {
-        const res = await fetchProject(page, search);
+        const res = await fetchTicket(page, search);
 
         if (res) {
-            setProjects(res.data.data);
+            setTickets(res.data.data);
             setCurrentPage(res.data.currentPage);
             setTotalPages(res.data.totalPages);
         }
@@ -80,51 +64,39 @@ const Layout = () => {
 
     return (
         <>
-            <ModalAddProject
+            <ModalAddTicket
                 show={showModalAdd}
                 handleClose={_handleCloseModalAdd}
                 onSuccess={_fetchData}
+                isAdmin={true}
             />
 
-            <ModalEditProject
+            <ModalEditTicket
                 data={selectedData}
                 show={showModalEdit}
                 handleClose={_handleCloseModalEdit}
                 onSuccess={_fetchData}
+                isAdmin={true}
             />
 
-            <ModalDeleteProject
+            <ModalDeleteTicket
                 data={selectedData}
                 show={showModalDelete}
                 handleClose={_handleCloseModalDelete}
                 onSuccess={_fetchData}
             />
 
-            <ModalUpdateStatusProject
+            <ModalUpdateStatusTicket 
                 data={selectedData}
                 show={showModalUpdateStatus}
                 handleClose={_handleCloseModalUpdateStatus}
                 onSuccess={_fetchData}
             />
 
-            <ModalDetailProject
-                data={selectedData}
-                show={showModalDetail}
-                handleClose={_handleCloseModalDetail}
-                onSuccess={_fetchData}
-            />
-
-            <ModalDetailMaintenance
-                data={selectedData}
-                show={showModalDetailMaintenance}
-                handleClose={_handleCloseModalDetailMaintenance}
-                onSuccess={_fetchData}
-            />
-
             <div className="card">
                 <div className="card-body">
-                    <h4>Kelola Project</h4>
-                    <div>Data Project yang telah dibuat</div><hr />
+                    <h4>Kelola Ticket</h4>
+                    <div>Data Ticket yang telah dibuat</div><hr />
 
                     <div className="row mb-3">
                         <div className="col-md-2 col-4">
@@ -132,7 +104,7 @@ const Layout = () => {
                                 className="btn btn-primary btn-sm w-100"
                                 onClick={_handleShowModalAdd}
                             >
-                                Tambah Project Baru
+                                Tambah Ticket Baru
                             </button>
                         </div>
                     </div>
@@ -142,21 +114,19 @@ const Layout = () => {
                             <input
                                 type="text"
                                 className="form-control form-select-sm"
-                                placeholder="Cari Project..."
+                                placeholder="Cari Ticket..."
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                             />
                         </div>
                     </div>
 
-                    <ProjectTable
-                        projects={projects}
+                    <TicketTable
+                        tickets={tickets}
                         onEdit={_handleShowModalEdit}
                         onDelete={_handleShowModalDelete}
                         onUpdateStatus={_handleShowModalUpdateStatus}
-                        onDetail={_handleShowModalDetail}
                         isAdmin={true}
-                        onDetailMaintenance={_handleShowModalDetailMaintenance}
                     />
 
                     <DynamicPagination

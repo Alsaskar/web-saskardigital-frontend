@@ -5,6 +5,9 @@ import { Route, Routes } from 'react-router-dom';
 import DashboardClient from '../pages/protected/client/dashboard';
 import ChangePasswordClient from '../pages/protected/client/change-password';
 import ProfileClient from '../pages/protected/client/profile';
+import ProjectsClient from '../pages/protected/client/projects';
+import TicketClient from '../pages/protected/client/ticket';
+import ViewTicketClient from '../pages/protected/client/ticket-view';
 
 const ClientRoutes = () => {
   return (
@@ -37,6 +40,33 @@ const ClientRoutes = () => {
                 element={
                   <ProtectedRoute allowedRoles={['client']}>
                     <DashboardClient />
+                  </ProtectedRoute>
+                }
+              />
+
+              <Route
+                path="/projects"
+                element={
+                  <ProtectedRoute allowedRoles={['client']}>
+                    <ProjectsClient />
+                  </ProtectedRoute>
+                }
+              />
+
+              <Route
+                path="/ticket"
+                element={
+                  <ProtectedRoute allowedRoles={['client']}>
+                    <TicketClient />
+                  </ProtectedRoute>
+                }
+              />
+
+              <Route
+                path="/ticket-view/:ticket_number"
+                element={
+                  <ProtectedRoute allowedRoles={['client']}>
+                    <ViewTicketClient />
                   </ProtectedRoute>
                 }
               />
