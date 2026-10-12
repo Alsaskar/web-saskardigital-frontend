@@ -11,6 +11,7 @@ import ModalDeleteProjectRequest from "../../../../../modules/project-request/co
 
 const statusList = [
     "new",
+    "contacted",
     "qualified",
     "project request",
     "proposal",
@@ -20,6 +21,7 @@ const statusList = [
 
 const statusLabel = {
     new: "New",
+    contacted: "Contacted",
     qualified: "Qualified",
     "project request": "Project Request",
     proposal: "Proposal",
@@ -51,6 +53,8 @@ const formatDate = (value) => {
 const getStatusVariant = (status) => {
     switch (status) {
         case "new":
+            return "primary";
+        case "contacted":
             return "secondary";
         case "qualified":
             return "info";
@@ -223,10 +227,10 @@ const Layout = () => {
                                             }
                                         />
 
-                                        {/* <InfoItem
-                                        label="Assign To"
-                                        value={`User #${lead.assign_to}`}
-                                    /> */}
+                                        <InfoItem
+                                            label="Sosial Media"
+                                            value={lead.sosial_media === '' ? '-' : lead.sosial_media}
+                                        />
                                     </Row>
 
                                     {lead.notes && (

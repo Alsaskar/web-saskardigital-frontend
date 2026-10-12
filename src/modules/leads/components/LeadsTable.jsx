@@ -64,7 +64,7 @@ const LeadsTable = ({ leadss, onEdit, onDelete, onUpdateStatus }) => {
                         <tr key={index} align="center">
                             <td>{index + 1}</td>
                             <td>{data.nama_lengkap}</td>
-                            <td>{data.email}</td>
+                            <td>{data.email === '' ? '-' : data.email}</td>
                             <td>{data.no_wa}</td>
 
                             <td>

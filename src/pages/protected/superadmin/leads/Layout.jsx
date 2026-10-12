@@ -8,6 +8,66 @@ import { useEffect, useState } from "react";
 import ModalUpdateStatusLeads from "../../../../modules/leads/components/ModalUpdateStatus";
 import ModalImportLeads from "../../../../modules/leads/components/ModalImport";
 
+
+const leadStatusGuides = [
+    {
+        value: 'new',
+        label: 'New',
+        description: 'Leads baru ditambahkan atau diimpor dan belum dihubungi.',
+        icon: 'bi-inbox',
+        color: 'secondary',
+    },
+    {
+        value: 'contacted',
+        label: 'Contacted',
+        description: 'Leads sudah dihubungi melalui WhatsApp, telepon, atau channel lainnya.',
+        icon: 'bi-chat-dots',
+        color: 'info',
+    },
+    {
+        value: 'qualified',
+        label: 'Qualified',
+        description: 'Leads telah dievaluasi dan berpotensi menjadi klien.',
+        icon: 'bi-patch-check',
+        color: 'primary',
+    },
+    {
+        value: 'project request',
+        label: 'Project Request',
+        description: 'Calon klien sudah menyampaikan kebutuhan proyek secara konkret.',
+        icon: 'bi-clipboard-check',
+        color: 'primary',
+    },
+    {
+        value: 'proposal',
+        label: 'Proposal',
+        description: 'Penawaran proyek sedang disiapkan atau sudah dikirim kepada calon klien.',
+        icon: 'bi-file-earmark-text',
+        color: 'warning',
+    },
+    {
+        value: 'negotation',
+        label: 'Negotiation',
+        description: 'Pembahasan harga, ruang lingkup, atau ketentuan kerja sama sedang berlangsung.',
+        icon: 'bi-handshake',
+        color: 'warning',
+    },
+    {
+        value: 'won',
+        label: 'Won',
+        description: 'Peluang berhasil dikonversi menjadi klien Saskardigital.',
+        icon: 'bi-trophy',
+        color: 'success',
+    },
+    {
+        value: 'lost',
+        label: 'Lost',
+        description: 'Peluang bisnis tidak berhasil atau diputuskan untuk tidak dilanjutkan.',
+        icon: 'bi-x-circle',
+        color: 'danger',
+    },
+];
+
 const Layout = () => {
     const { fetchLeads } = useLeads()
     const [leadss, setLeadss] = useState([])
@@ -100,7 +160,7 @@ const Layout = () => {
                 onSuccess={_fetchData}
             />
 
-            <ModalImportLeads 
+            <ModalImportLeads
                 show={showModalImport}
                 handleClose={_handleCloseModalImport}
                 onSuccess={_fetchData}
@@ -108,6 +168,49 @@ const Layout = () => {
 
             <div className="card">
                 <div className="card-body">
+
+
+                    <div className="mb-4">
+                        <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                            <div>
+                                <h5 className="mb-1">
+                                    <i className="bi bi-info-circle me-2"></i>
+                                    Panduan Status Leads
+                                </h5>
+                                <p className="text-muted small mb-0">
+                                    Penjelasan setiap tahapan dalam proses penjualan Saskardigital.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-3">
+                            {leadStatusGuides.map((item) => (
+                                <div className="col" key={item.value}>
+                                    <div className="card h-100 border shadow-sm">
+                                        <div className="card-body">
+                                            <div className="d-flex align-items-center gap-2 mb-3">
+                                                <div
+                                                    className={`d-flex align-items-center justify-content-center rounded-3 bg-${item.color} bg-opacity-10 text-${item.color}`}
+                                                    style={{ width: '42px', height: '42px', flexShrink: 0 }}
+                                                >
+                                                    <i className={`bi ${item.icon} fs-5`}></i>
+                                                </div>
+
+                                                <h6 className="mb-0 fw-semibold">
+                                                    {item.label}
+                                                </h6>
+                                            </div>
+
+                                            <p className="text-muted small mb-0">
+                                                {item.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div><hr />
+
                     <h4>Kelola Leads</h4>
                     <div>Data Leads yang telah dibuat</div><hr />
 
@@ -152,6 +255,7 @@ const Layout = () => {
                             >
                                 <option value="">Semua Status</option>
                                 <option value="new">New</option>
+                                <option value="contacted">Contacted</option>
                                 <option value="qualified">Qualified</option>
                                 <option value="project request">Project Request</option>
                                 <option value="proposal">Proposal</option>

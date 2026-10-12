@@ -6,7 +6,6 @@ import { useLeads } from '../hooks/useLeads';
 
 export const validationSchema = Yup.object({
     nama_lengkap: Yup.string().required('Nama Lengkap wajib diisi'),
-    email: Yup.string().required('Email wajib diisi'),
     no_wa: Yup.string().required('No Wa wajib diisi'),
     source: Yup.string().required('Source wajib diisi'),
     notes: Yup.string(),
@@ -22,6 +21,7 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
             email: values.email,
             no_wa: values.no_wa,
             source: values.source,
+            sosial_media: values.sosial_media,
             notes: values.notes,
         };
 
@@ -42,6 +42,7 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                 show={show}
                 onHide={handleClose}
                 backdrop="static"
+                size='lg'
             >
                 <Modal.Header closeButton>
                     <Modal.Title>Tambahkan Leads Baru</Modal.Title>
@@ -53,6 +54,7 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                         email: '',
                         no_wa: '',
                         source: '',
+                        sosial_media: '',
                         notes: '',
                     }}
                     validationSchema={validationSchema}
@@ -65,7 +67,7 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                                 <div className="row">
                                     <div className="col-md-6">
                                         <Form.Group>
-                                            <Form.Label>Nama Lengkap</Form.Label>
+                                            <Form.Label>Nama Lengkap <font color="red">*</font></Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 name="nama_lengkap"
@@ -100,7 +102,7 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                                 <div className="row mt-3">
                                     <div className="col-md-6">
                                         <Form.Group>
-                                            <Form.Label>No Wa</Form.Label>
+                                            <Form.Label>No Wa <font color="red">*</font></Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 name="no_wa"
@@ -116,18 +118,47 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                                     </div>
                                     <div className="col-md-6">
                                         <Form.Group>
-                                            <Form.Label>Pilih Sumber</Form.Label>
+                                            <Form.Label>Pilih Sumber <font color="red">*</font></Form.Label>
+
                                             <Form.Select
                                                 name="source"
                                                 value={values.source}
                                                 onChange={handleChange}
                                                 isInvalid={touched.source && errors.source}
                                             >
-                                                <option value="">------</option>
-                                                <option value="Facebook Ads">Facebook Ads</option>
-                                                <option value="Instagram Ads">Instagram Ads</option>
-                                                <option value="Organic">Organic</option>
-                                                <option value="Website">Website</option>
+                                                <option value="">Pilih Source</option>
+
+                                                <optgroup label="Paid Advertising">
+                                                    <option value="Facebook Ads">Facebook Ads</option>
+                                                    <option value="Instagram Ads">Instagram Ads</option>
+                                                    <option value="Google Ads">Google Ads</option>
+                                                </optgroup>
+
+                                                <optgroup label="Social Media">
+                                                    <option value="Instagram Organic">Instagram Organic</option>
+                                                    <option value="Facebook Organic">Facebook Organic</option>
+                                                    <option value="TikTok Organic">TikTok Organic</option>
+                                                    <option value="LinkedIn">LinkedIn</option>
+                                                </optgroup>
+
+                                                <optgroup label="Search & Discovery">
+                                                    <option value="Google Maps">Google Maps</option>
+                                                    <option value="Organic Search">Organic Search</option>
+                                                </optgroup>
+
+                                                <optgroup label="Direct & Inbound">
+                                                    <option value="WhatsApp">WhatsApp</option>
+                                                    <option value="Website">Website</option>
+                                                    <option value="Referral">Referral</option>
+                                                    <option value="Direct Outreach">Direct Outreach</option>
+                                                </optgroup>
+
+                                                <optgroup label="Other">
+                                                    <option value="Event / Networking">
+                                                        Event / Networking
+                                                    </option>
+                                                    <option value="Other">Other</option>
+                                                </optgroup>
                                             </Form.Select>
 
                                             <Form.Control.Feedback type="invalid">
@@ -136,6 +167,21 @@ const ModalAddLeads = ({ show, handleClose = () => { }, onSuccess = () => { } })
                                         </Form.Group>
                                     </div>
                                 </div>
+
+                                <Form.Group className='mt-3'>
+                                    <Form.Label>Sosial Media</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        name="sosial_media"
+                                        value={values.sosial_media}
+                                        onChange={handleChange}
+                                        isInvalid={touched.sosial_media && errors.sosial_media}
+                                        placeholder="Contoh: @akun_instagram"
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                        {errors.sosial_media}
+                                    </Form.Control.Feedback>
+                                </Form.Group>
 
                                 <Form.Group className="mt-3">
                                     <Form.Label>Notes</Form.Label>
